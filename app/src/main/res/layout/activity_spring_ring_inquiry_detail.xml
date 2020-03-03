@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <tw.com.masterhand.gmorscrm.view.Appbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/appbar_size">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="90dp">
+
+            <tw.com.masterhand.gmorscrm.view.CompanyCard
+                android:id="@+id/companyCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+
+            <tw.com.masterhand.gmorscrm.view.ItemProject
+                android:id="@+id/itemProject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_gray_v"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:showDividers="middle|end">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@mipmap/common_spring"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/empty_show"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_code"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_project_name"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvInquiryName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_apply"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvApply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_potential"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPotential"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_need_image"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvNeedImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/non_standard_inquiry_need_parity"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvNeedParity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_product_type"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvProductType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_competitive_status"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvCompetitive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_sgb_advantage"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvAdvantage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_sgb_disadvantage"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvDisadvantage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_trend"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTrend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_sealed_state"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvSealed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_speed"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_pressure"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPressure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_temperature"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_lifetime"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvLifetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_static_material"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvStaticMaterial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_static_hardness"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvStaticHardness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_static_smoothness"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvStaticSmoothness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_dynamic_material"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvDynamicMaterial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_dynamic_hardness"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvDynamicHardness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_dynamic_smoothness"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvDynamicSmoothness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/quotation_item"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/containerItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/divider_gray_light_v"
+                        android:orientation="vertical"
+                        android:showDividers="middle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/spring_ring_inquiry_other"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnApprover"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_size"
+                    android:background="@color/transparent"
+                    android:drawableEnd="@mipmap/common_arrow_right"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="8dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/approver"/>
+
+                <Button
+                    android:id="@+id/btnResource"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_size"
+                    android:background="@color/transparent"
+                    android:drawableEnd="@mipmap/common_arrow_right"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="8dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/online_resource"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/assistant"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvAssistant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/approval_description"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvApprovalDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/relative_photo"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/container_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/divider_transparent_h_8dp"
+                            android:orientation="horizontal"
+                            android:showDividers="middle|end"/>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/list_size"
+                        android:gravity="center_vertical"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/builder"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvBuilder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <tw.com.masterhand.gmorscrm.view.ItemApproval
+        android:id="@+id/itemApproval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+</RelativeLayout>

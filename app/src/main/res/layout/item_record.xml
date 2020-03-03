@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gray_light_corner">
+
+    <LinearLayout
+        android:id="@+id/containerTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/leftBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/empty_show"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerTopBar"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_size"
+            android:gravity="center_vertical"
+            android:text="@string/empty_show"
+            android:textColor="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableStart="@mipmap/common_headshot"
+                android:gravity="center_vertical"
+                android:text="@string/empty_show"/>
+
+            <TextView
+                android:id="@+id/textView_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:text="@string/empty_show"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/empty_show"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textColor="@color/orange"
+            android:text="@string/empty_show"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@color/transparent"
+        android:drawableEnd="@mipmap/common_arrow_right"
+        android:gravity="center_vertical|end"
+        android:text="@string/go_to"
+        android:textColor="@color/gray"/>
+</RelativeLayout>

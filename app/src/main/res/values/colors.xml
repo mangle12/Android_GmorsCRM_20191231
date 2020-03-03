@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffcf42</color>
+    <color name="colorPrimaryDark">#c68c26</color>
+    <color name="colorAccent">#e1ac2f</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_light_extra">#e6e6e6</color>
+    <color name="gray_light">#dadada</color>
+    <color name="gray">#838383</color>
+    <color name="gray_dark">#4d4d4d</color>
+    <color name="gray_dark_extra">#333333</color>
+    <color name="black">#000000</color>
+    <color name="red">#ce3d0e</color>
+    <color name="orange">#e67b00</color>
+    <color name="green">#008580</color>
+    <color name="blue">#2980b4</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="black_half">#bb000000</color>
+    <color name="gray_half">#bbdadada</color>
+    <color name="arc_progress_current">@color/colorPrimary</color>
+    <color name="arc_progress_last">#22000000</color>
+    <color name="arc_progress_background">@color/gray_light</color>
+    <!--八大類各自代表色-->
+    <color name="visit">#ffcd42</color>
+    <color name="office">#c5801e</color>
+    <color name="task">#666666</color>
+    <color name="absent">#90272d</color>
+    <color name="reimbursement">#2980b1</color>
+    <color name="contract">#cb3d0e</color>
+    <color name="quotation">#2980b1</color>
+    <color name="sample">#e37b00</color>
+    <!--新增八大類各自代表色-->
+    <color name="special_price">#4bbb58</color>
+    <color name="production">#00c8c8</color>
+    <color name="non_standard_inquiry">#c8a0ff</color>
+    <color name="spring_ring_inquiry">#8250ff</color>
+    <color name="special_ship">#288200</color>
+    <color name="repayment">#003bc8</color>
+    <color name="express">#00beff</color>
+    <color name="travel">#ff6400</color>
+</resources>

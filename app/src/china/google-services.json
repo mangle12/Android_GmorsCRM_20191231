@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "864536944817",
+    "firebase_url": "https://fcm0219-5cfab.firebaseio.com",
+    "project_id": "fcm0219-5cfab",
+    "storage_bucket": "fcm0219-5cfab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864536944817:android:547896ffe9eeffac188290",
+        "android_client_info": {
+          "package_name": "tw.com.masterhand.gmorscrm.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864536944817-456d2goetv88ejuh28o1asaasot40alg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvqDJ-haI3p58sI8sAnFq9mUbNVPMZxu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864536944817-456d2goetv88ejuh28o1asaasot40alg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,1006 @@
+﻿<resources>
+    <string name="empty_show">-</string>
+    <string name="progress_msg">Processando...</string>
+    <string name="logout">Sair</string>
+    <string name="close">Fechar </string>
+    <string name="previous">Último</string>
+    <string name="next">Próximo(a)</string>
+    <string name="clear">Limpar</string>
+    <string name="account">Identidade do usuário</string>
+    <string name="password">Senha</string>
+    <string name="account_remember">Lembrar conta</string>
+    <string name="login">Entrar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="complete">Finalizar</string>
+    <string name="edit">Editar</string>
+    <string name="back">Voltar</string>
+    <string name="remain">Permanecer</string>
+    <string name="goto_setting">Página de ajuste</string>
+    <string name="time">Hora</string>
+    <string name="today">Hoje</string>
+    <string name="more">Mais</string>
+    <string name="sign_in">Verificar</string>
+    <string name="sign_out">Confirmar</string>
+    <string name="customer">Empresa</string>
+    <string name="person">Pessoal</string>
+    <string name="use_wechat">Wechat</string>
+    <string name="item">Projeto</string>
+    <string name="assistant">Assistente de vendas</string>
+    <string name="change">Revisar</string>
+    <string name="online_resource">Recursos online</string>
+    <string name="money_unit">Dólares</string>
+    <string name="order_unit">Página</string>
+    <string name="people_unit">Pessoal</string>
+    <string name="month">Mês</string>
+    <string name="day">SUN</string>
+    <string name="this_week">Esta semana</string>
+    <string name="this_month">O mês</string>
+    <string name="last_month">Último mês</string>
+    <string name="week_unit">Semanal</string>
+    <string name="month_unit">Mês</string>
+    <string name="season_unit">Trimestral</string>
+    <string name="season1">1ª estação</string>
+    <string name="season2">2ª estação</string>
+    <string name="season3">3ª estação</string>
+    <string name="season4">4ª estação</string>
+    <string name="unit">pcs</string>
+    <string name="go_to">Verificar</string>
+    <string name="reason">Motivo</string>
+    <string name="complete_time">Concluir tempo</string>
+    <string name="estimate_amount">Montante estimado</string>
+    <string name="other_worker">Outras vendas</string>
+    <string name="relative_photo">Foto relacionada</string>
+    <string name="photo">Quadro</string>
+    <string name="report">Relatório de trabalho</string>
+    <string name="note">Remarcar</string>
+    <string name="other_info">Outros</string>
+    <string name="profile">Experiência pessoal</string>
+    <string name="other">Outros</string>
+    <string name="local_time">Hora local</string>
+    <string name="relative_doc">Documentos relacionados</string>
+    <string name="send">Enviar</string>
+    <string name="all">total</string>
+    <string name="start_time">Hora de início</string>
+    <string name="end_time">Data final</string>
+    <string name="start">Iniciar</string>
+    <string name="end">Fim</string>
+    <string name="no_select">não selecionado</string>
+    <string name="select_customer">Selecionar cliente </string>
+    <string name="select_project">Selecionar item de trabalho</string>
+    <string name="msg_add_project">Este cliente ainda não tem nenhuma tarefa, criar uma nova tarefa ou não?</string>
+    <string name="add_product">Criar produto</string>
+    <string name="name_card">Cartão de visita</string>
+    <string name="name_card_photo">cartão de visita\n foto</string>
+    <string name="head_photo">Tirar uma foto do rosto</string>
+    <string name="name">Nome</string>
+    <string name="last_name">Sobrenome</string>
+    <string name="division">Departamento</string>
+    <string name="job_title">Título do cargo</string>
+    <string name="all_day">Todos os dias</string>
+    <string name="select_photo_title">Selecionar fonte da fotografia</string>
+    <string name="demand_unit">Nome da unidade</string>
+    <string name="remove">Remover </string>
+    <string name="remove_confirm">Remover confirmação?</string>
+    <string name="join_confirm">Você gostaria de participar?</string>
+    <string name="scheduled_invite">Cronograma do convite</string>
+    <string name="scheduled_trip">Plano da viagem</string>
+    <string name="scheduled_task">Plano da tarefa</string>
+    <string name="no_sign_in">não verificado</string>
+    <string name="no_sign_out">não confirmado</string>
+    <string name="unread_msg">Mais recente</string>
+    <string name="trip">Cronograma</string>
+    <string name="agree">Concordar</string>
+    <string name="disagree">Discordar</string>
+    <string name="resend">Nova aplicação</string>
+    <string name="select_all">Selecionar tudo</string>
+    <string name="select_all_cancel">Cancelar tudo</string>
+    <string name="department">Departamento</string>
+    <string name="all_type">Todos os tipos</string>
+    <string name="all_department">Todos os departamentos </string>
+    <string name="all_company">Todos os canal</string>
+    <string name="contract_all_amount">Valor total do contrato</string>
+    <string name="quotation_count">Valor total da cotação </string>
+    <string name="invoice_amount">Montante do faturamento </string>
+    <string name="sample_count">Quantidade total de amostras</string>
+    <string name="all_people">Todas as pessoas</string>
+    <string name="address">Endereço</string>
+    <string name="selected">Selecionado(s)</string>
+    <string name="not_selected">não selecionado</string>
+    <string name="builder">Usuário criado</string>
+    <string name="filter">Filtro</string>
+    <string name="from">De</string>
+    <string name="discount">Desconto</string>
+    <string name="batch_submit">Apresentar para todos </string>
+    <string name="space">(Em branco)</string>
+
+    <!-- 請假-->
+    <string name="absent_reason">Motivo da saída</string>
+    <string name="absent_people">Saída de pessoal</string>
+ <!-- 出差-->
+    <string name="travel_name">Nome da viagem de negócios</string>
+    <string name="travel_info">Informação do cliente</string>
+    <string name="travel_reason">Finalidade</string>
+    <string name="travel_support">Que suporte você precisa</string>
+    <string name="travel_customer_background">Histórico do cliente</string>
+    <string name="travel_customer_tech">Tecnologia do cliente</string>
+    <string name="travel_participant">Sugerido quem está vindo</string>
+    <!-- 快遞-->
+    <string name="express_name">Nome do expresso</string>
+    <string name="express_type">Amostras sem preço</string>
+    <string name="express_contract">Número do contrato</string>
+    <string name="express_model">Número de série e quantidade do expresso </string>
+    <string name="express_amount">Preço do produto</string>
+    <string name="express_expense">Taxa do expresso</string>
+    <string name="express_destination">Destinação do expresso</string>
+    <string name="express_reason">Aplicar razão</string>
+    <string name="express_type_free">amostra grátis</string>
+    <string name="express_type_value">Amostras com preço</string>
+    <string name="express_origin">Origem</string>
+    <string name="express_arrival_payment">O frete é pago por chegada ou não</string>
+    <string name="express_repayment_date">Data de coleta do plano</string>
+    <!-- 特批發貨-->
+    <string name="special_ship_code">Número da ordem de embarque</string>
+    <string name="special_ship_amount">Montante do embarque</string>
+    <string name="special_ship_not_bill_amount">Entregue mas não faturado</string>
+    <string name="special_ship_not_expire_amount">Faturamento não vencido</string>
+    <string name="special_ship_expire_day">Dia de vencimento mais recente</string>
+    <string name="special_ship_expire_amount">Valor total em atraso</string>
+    <string name="special_ship_biggest_expire_day">Os dias vencidos há mais tempo</string>
+    <string name="special_ship_prepayment">Valor do pré-pagamento</string>
+    <string name="special_ship_credit">Montante do crédito aprovado</string>
+    <string name="special_ship_credit_risk">Limite de risco de crédito</string>
+    <string name="special_ship_less_than_500">Menos de $500?</string>
+    <string name="special_ship_repayment_date">Data de coleta do plano</string>
+    <string name="special_ship_ship_again">Se entrega o produto outra vez antes da data de coleta do plano</string>
+    <string name="special_ship_total">Total</string>
+    <string name="special_ship_exceed_quota">Acima do limite</string>
+    <!-- 回款-->
+    <string name="repayment_date">Data da coleta</string>
+    <string name="repayment_amount">Montante da coleta</string>
+    <string name="repayment_type">Tipo de coleta</string>
+    <string name="repayment_type_transfer">T/T</string>
+    <string name="repayment_type_bill">Esboço</string>
+    <!-- 彈簧蓄能圈詢價-->
+    <string name="spring_ring_inquiry_name">Solicitar nome do armazenamento de arruelas de pressão </string>
+    <string name="spring_ring_inquiry_code">Número da solicitação</string>
+    <string name="spring_ring_inquiry_project_name">Abreviatura + nome do projeto</string>
+    <string name="spring_ring_inquiry_potential">Oportunidade potencial de vendas para o ano</string>
+    <string name="spring_ring_inquiry_need_image">Precisa de suporte de outro departamento </string>
+    <string name="spring_ring_inquiry_apply">Aplicação e local</string>
+    <string name="spring_ring_inquiry_product_type">Tipo de produtos </string>
+    <string name="spring_ring_inquiry_competitive_status">Status da concorrência</string>
+    <string name="spring_ring_inquiry_sgb_advantage">Pontos fortes SGB </string>
+    <string name="spring_ring_inquiry_sgb_disadvantage">Pontos vulneráveis SGB</string>
+    <string name="spring_ring_inquiry_trend">Tendência</string>
+    <string name="spring_ring_inquiry_need_parity">Precisa comparar preços?</string>
+    <string name="spring_ring_inquiry_sealed_state">Estado da selagem</string>
+    <string name="spring_ring_inquiry_speed">Velocidade de movimento (RPM)</string>
+    <string name="spring_ring_inquiry_pressure">Pressão de operação</string>
+    <string name="spring_ring_inquiry_temperature">Temperatura de operação</string>
+    <string name="spring_ring_inquiry_lifetime">Expectativa de vida</string>
+    <string name="spring_ring_inquiry_other">Outros (desalinhamento de eixo, deslocamento de eixo, método de instalação etc.)</string>
+    <string name="spring_ring_inquiry_static_material">Superfície estática do material A</string>
+    <string name="spring_ring_inquiry_static_hardness">Superfície estática do material A - dureza</string>
+    <string name="spring_ring_inquiry_static_smoothness">Superfície estática do material A - manuseio e limpeza</string>
+    <string name="spring_ring_inquiry_dynamic_material">Superfície dinâmica do material B</string>
+    <string name="spring_ring_inquiry_dynamic_hardness">Dureza da superfície dinâmica do material B</string>
+    <string name="spring_ring_inquiry_dynamic_smoothness">Manuseio e limpeza da superfície dinâmica do material B</string>
+    <string name="spring_ring_inquiry_product_part">Número da peça/Número do layout</string>
+    <string name="spring_ring_inquiry_product_equipment">Equipment or application name</string>
+    <string name="spring_ring_inquiry_product_back_pressure">Back pressure</string>
+    <string name="spring_ring_inquiry_product_medium">Médio</string>
+    <string name="spring_ring_inquiry_product_sealed_type">Tipo de ranhura do selo</string>
+    <string name="spring_ring_inquiry_product_product_type">Categoria do produto (p. ex.: 530)</string>
+    <string name="spring_ring_inquiry_product_groove_diameter">Diâmetro interno da ranhura</string>
+    <string name="spring_ring_inquiry_product_groove_outer_diameter">Diâmetro externo da ranhura</string>
+    <string name="spring_ring_inquiry_product_groove_width">Largura da ranhura</string>
+    <string name="spring_ring_inquiry_product_material">Número do material (p. ex.: A0205)</string>
+    <string name="spring_ring_inquiry_product_count">@string/inquiry_count</string>
+    <string name="spring_ring_inquiry_product_date">Data de entrega</string>
+    <string name="spring_ring_inquiry_product_other">Descrição detalhada</string>
+    <string name="spring_ring_inquiry_product_remark">Remarcar (solicitação especial, p. ex.: CAD)</string>
+    <!-- 非標詢價-->
+    <string name="non_standard_inquiry_name">Nome da cotação via livro não baseado nos preços </string>
+    <string name="non_standard_inquiry_code">Número da solicitação</string>
+    <string name="non_standard_inquiry_office">Organização de vendas</string>
+    <string name="non_standard_inquiry_need_parity">Precisa comparar preços?</string>
+    <string name="non_standard_inquiry_note">Demanda especial</string>
+    <string name="non_standard_inquiry_product_name">Nome do produto (categoria)</string>
+    <string name="product_code">Número do produto</string>
+    <string name="inquiry_count">Quantidade do produto</string>
+    <string name="size">Tamanho do produto</string>
+    <string name="tolerance">Requisito de tolerância</string>
+    <string name="non_standard_inquiry_product_material">Material</string>
+    <string name="hardness">Dureza (SHORE ou IRHD)</string>
+    <string name="color">Cor</string>
+    <string name="certification">Requisito de certificação</string>
+    <string name="wrapping">Solicitação de embalagem</string>
+    <string name="reference_number">Referência do layout</string>
+    <string name="medium">Médio</string>
+    <string name="temperature">Temperatura</string>
+    <string name="pressure">Pressão</string>
+    <string name="non_standard_inquiry_product_status">Dinâmico/Estático</string>
+    <string name="line_speed">Velocidade da linha</string>
+    <string name="year_count">Utilização anual</string>
+    <!-- 量產-->
+    <string name="production_name">Criar nome da produção do projeto</string>
+    <string name="production_year_amount">Montante das vendas anuais</string>
+    <string name="production_model">Número de itens do 1º lote</string>
+    <string name="production_date">Data do 1º lote </string>
+    <string name="production_amount">Preço do 1º lote</string>
+    <string name="production_psw">PSW assinado? (indústria automotiva)</string>
+    <!-- 特價-->
+    <string name="special_price_name">Nome do preço especial</string>
+    <string name="special_price_reason">Aplicar razão</string>
+    <string name="special_price_status">Status do projeto</string>
+    <string name="special_price_type">Tipo de preço especial</string>
+    <string name="special_price_year_amount">Preço estimado de compra anual</string>
+    <string name="special_price_year_discount">Desconto médio do projeto para uso anual</string>
+    <string name="special_price_offer">Número da oferta do produto especial </string>
+    <string name="special_price_approval">Etapa de aprovação</string>
+    <string name="special_price_project_status_sample">Amostragem</string>
+    <string name="special_price_project_status_small">Fase-piloto</string>
+    <string name="special_price_project_status_big">Produção</string>
+    <string name="special_price_type_single">Único</string>
+    <string name="special_price_type_frequent">Longo prazo</string>
+    <string name="special_price_approval_1">Aprovação nível 1</string>
+    <string name="special_price_approval_2">Aprovação nível 2</string>
+    <string name="special_price_approval_3">Aprovação nível 2</string>
+    <string name="special_price_amount">Preço unitário</string>
+    <string name="competitor_amount">Lista de preços da concorrência</string>
+    <string name="special_price_description">Modelo/material/descrição do produto</string>
+    <!-- 報價-->
+    <string name="quotation_period">Período efetivo</string>
+    <string name="quotation_item">Itens do produto</string>
+    <string name="payment_method">Prazo de pagamento</string>
+    <string name="quotation_amount">Valor total da cotação</string>
+    <string name="unit_keep">Casa decimal do preço unitário</string>
+    <string name="product_category">Grupo de produtos</string>
+    <string name="product_report">Relatórios</string>
+    <string name="product_model">Número de itens do produto</string>
+    <string name="product_description">Descrição do produto</string>
+    <string name="product_discount">Desconto do produto </string>
+    <string name="product_count">Quantidade do produto</string>
+    <string name="product_amount">Preço unitário do produto</string>
+    <string name="product_non_standard">Número da ordem de cotação via livro não baseado nos preços</string>
+    <string name="product_offer">Número da oferta</string>
+    <string name="quotation_name">Nome da cotação</string>
+    <string name="quotation_to_contract">Converter cotação em contrato</string>
+    <string name="tax_include">Impostos inclusos</string>
+    <string name="tax_type_none">Excluindo impostos</string>
+    <string name="tax_rate">Impostos inclusos</string>
+    <!-- 合同-->
+    <string name="contract_name">Nome do contrato</string>
+    <string name="contract_amount">Valor total do contrato</string>
+    <string name="contract">Contrato </string>
+    <string name="contract_count">Números do contrato</string>
+    <string name="receiver">Destinatário</string>
+    <string name="delivery_date">Data de entrega</string>
+    <!-- 客戶資料 -->
+    <string name="important_customer">Cliente importante</string>
+    <string name="basic_info">Informações básicas</string>
+    <string name="principal">Encarregado</string>
+    <string name="phone">Telefone</string>
+    <string name="email">E-mail</string>
+    <string name="uniform_id">Registro fiscal</string>
+    <string name="website">Site da empresa</string>
+    <string name="contact">Pessoa de contato</string>
+    <string name="industry">Classificação industrial</string>
+    <string name="group">Empreendimento</string>
+    <string name="customer_team">Segmento de mercado</string>
+    <string name="customer_source">Cliente de</string>
+    <string name="customer_type">Classificação do cliente</string>
+    <string name="customer_level">Tipo de clientes</string>
+    <string name="customer_info">Informações do cliente</string>
+    <string name="product">Produtos</string>
+    <string name="customer_show_name">Abreviatura da empresa</string>
+    <string name="customer_name">Nome do Cliente</string>
+    <string name="customer_name_chinese">Nome do Cliente</string>
+    <string name="customer_name_english">Nome do Cliente(Inglês)</string>
+    <string name="title_delete_name_card">Deletar cartão de visita</string>
+    <string name="msg_delete_name_card">Tem certeza que quer deletar o cartão de visita?</string>
+    <string name="not_activated">Desativado</string>
+    <!-- 提示 -->
+    <string name="alert_msg1">será</string>
+    <string name="alert_msg2">Iniciar, continuar</string>
+    <string name="unit_day">Dia</string>
+    <string name="unit_hour">Hora</string>
+    <string name="unit_minute">Minuto</string>
+    <string name="alert">Dica</string>
+    <string name="alert_no">não dar sugestões</string>
+    <string name="alert_current">Lembrar antes do início do cronograma</string>
+    <string name="alert_5M">lembrar 5 minutos atrás</string>
+    <string name="alert_15M">lembrar 15 minutos atrás </string>
+    <string name="alert_30M">lembrar 30 minutos atrás</string>
+    <string name="alert_1H">lembrar 1 hora atrás</string>
+    <string name="alert_2H">lembrar 2 horas atrás</string>
+    <string name="alert_1D">lembrar 1 dia atrás</string>
+    <string name="alert_2D">lembrar 2 dias atrás </string>
+    <string name="alert_1W">lembrar 1 semana </string>
+    <!-- hint -->
+    <string name="hint_note">(Opcional)</string>
+    <string name="hint_absent">Descreva motivo da saída</string>
+    <string name="hint_input_text">Clicar em texto</string>
+    <string name="hint_required">*(Obrigatório)</string>
+    <string name="hint_not_required">(Opcional)</string>
+    <string name="hint_address">Sem incluir a cidade do país</string>
+    <string name="hint_email">Insira e-mail</string>
+    <string name="hint_invoice_number">Insira ID fiscal</string>
+    <string name="hint_phone_type">Tipo de telefone (obrigatório)</string>
+    <string name="hint_phone_type_add">Criar tags personalizados</string>
+    <string name="hint_phone_number">Número do telefone (obrigatório)</string>
+    <string name="hint_phone_extension">Insira número de extensão </string>
+    <string name="hint_country">País/região</string>
+    <string name="hint_city">Cidade </string>
+    <string name="hint_contract_amount">Insira preço do contrato</string>
+    <string name="hint_approval">Parecer da aprovação</string>
+    <string name="hint_profile">Insira experiência pessoal </string>
+    <string name="hint_password_old">Insira senha original</string>
+    <string name="hint_password_new">Insira nova senha</string>
+    <string name="hint_password_confirm">Insira a nova senha outra vez</string>
+    <string name="hint_product">Produto do cliente (classificação industrial)</string>
+    <string name="hint_sale_search">Insira nome do cliente ou nome do projeto</string>
+    <string name="hint_purchase_input">Coluna de lançamento de compras</string>
+    <!-- 樣品 -->
+    <string name="sample">Amostra</string>
+    <string name="sample_detail">Detalhe da amostra</string>
+    <string name="sample_price">Valor total do pedido de amostra  </string>
+    <string name="sample_reason">Motivo da amostra</string>
+    <string name="sample_source">Amostra de</string>
+    <string name="sample_import">Importar método</string>
+    <string name="sample_delivery">Transporte doméstico</string>
+    <string name="sample_intro">Resumo</string>
+    <string name="sample_intro_example">(p. ex.: posição na indústria, utilização anual, participação no mercado etc.)\n*(obrigatório)</string>
+    <string name="sample_test_period">Frequência de teste</string>
+    <string name="sample_test_basis">Basear-se na avaliação do teste </string>
+    <string name="sample_other_intro">Descrição detalhada</string>
+    <string name="sample_receiver">Destinatário</string>
+    <string name="sample_receiver_address">Endereço do destinatário</string>
+    <string name="sample_receiver_phone">Telefone do destinatário</string>
+    <string name="sample_test_start_time">Hora de início do teste</string>
+    <string name="sample_delivery_time">Hora da entrega</string>
+    <string name="sample_name">Nome da amostra</string>
+    <string name="sample_item_category">Tipo de amostra</string>
+    <string name="sample_item_type">Tipo da amostra</string>
+    <string name="sample_item_report">Relatórios</string>
+    <string name="sample_item_company_stock">Do estoque</string>
+    <string name="sample_item_provider_stock">Estoque do fornecedor</string>
+    <string name="sample_item_count">Aplicar quantidade </string>
+    <string name="sample_item_year_count">Utilização anual</string>
+    <string name="sample_item_code">@string/product_code</string>
+    <string name="sample_item_other">Outros</string>
+    <string name="sample_item_other_example">(p. ex.: solicitação de embalagem, solicitação de lead time [tempo de execução], número da oferta)</string>
+    <string name="sample_item_price">Preço unitário da amostra</string>
+    <string name="sample_item_total">Total</string>
+    <!-- work detail -->
+    <string name="conversation">Discussão da mensagem</string>
+    <string name="check_in_out">Verificar/confirmar</string>
+    <string name="week_report">Este relatório semanal</string>
+    <string name="participant">Participantes</string>
+    <string name="related_worker">Vendas relacionadas</string>
+    <string name="reviewer">Aprovador</string>
+    <string name="place">Local</string>
+    <string name="reply">Responder</string>
+    <string name="cancel_task">Cancelar</string>
+    <string name="delay_task">Reprogramar</string>
+    <string name="restart_task">Reinicializar</string>
+    <string name="cancel_reason">Cancelar motivo</string>
+    <string name="msg_cancel_reason">Selecione ou descreva o motivo do cancelamento</string>
+    <string name="explain_reason">Explicação</string>
+    <string name="delay_reason">Motivo da reprogramação</string>
+    <string name="msg_delay_reason">Selecione ou descreva o motivo do atraso</string>
+    <string name="next_start_time">Próxima hora inicial</string>
+    <string name="next_end_time">Próxima hora final</string>
+    <string name="visit_name">Nome da atividade</string>
+    <string name="office_name">Nome administrativo</string>
+    <string name="task_name">Nome da tarefa</string>
+    <string name="visit_type">Tipo de atividade</string>
+    <string name="visit_normal">Visita</string>
+    <string name="visit_phone">Chamada telefônica</string>
+    <string name="visit_email">E-mail</string>
+    <string name="visit_fast">Nota</string>
+    <string name="report_updated_at">Última atualização</string>
+    <string name="not_submitted">Sem apresentação</string>
+    <string name="submitted">Apresentado</string>
+    <string name="submit">Enviar</string>
+    <string name="all_not_submitted">Projeto não apresentado</string>
+    <!-- 任務狀態 -->
+    <string name="completed">Finalizar</string>
+    <string name="not_start">Não iniciado</string>
+    <string name="uncompleted">Inacabado</string>
+    <string name="canceled">Cancelado</string>
+    <string name="delayed">Reagendado</string>
+    <!-- 參與狀態 -->
+    <string name="accept_none">não selecionado</string>
+    <string name="accept_no">negar </string>
+    <string name="accept_maybe">Talvez</string>
+    <string name="accept_yes">Sim</string>
+    <!-- 簽到狀態 -->
+    <string name="sign_none">não verificado</string>
+    <string name="sign_in_done">Foram verificados</string>
+    <string name="sign_out_done">Foram conferidos </string>
+    <!-- 工作項目 -->
+    <string name="project">Projeto</string>
+    <string name="project_name">Nome do projeto</string>
+    <string name="create_time">Tempo criado</string>
+    <string name="request_unit">Nome da unidade</string>
+    <string name="contact_window">Janela de contato</string>
+    <string name="in_charge">Supervisor</string>
+    <string name="check_date">Data de encerramento</string>
+    <!-- 消息 -->
+    <string name="news_notify">Notificação</string>
+    <string name="news_mission">Convidado</string>
+    <string name="news_announce">Anúncio</string>
+    <string name="news_resource">Recursos de vendas</string>
+    <string name="editor">Remetente</string>
+    <!-- 工作 -->
+    <string name="work">Trabalho</string>
+    <string name="work_visit">Atividade</string>
+    <string name="work_office">Administrativo</string>
+    <string name="work_task">Tarefa</string>
+    <string name="work_absent">Saída</string>
+    <string name="work_test">Test</string>
+    <!-- 申請 -->
+    <string name="apply">Aplicar</string>
+    <string name="apply_quotation">Cotação</string>
+    <string name="apply_contract">Contrato </string>
+    <string name="apply_reimbursement">Reembolsos</string>
+    <string name="apply_sample">Amostra</string>
+    <string name="apply_special_price">Preço especial</string>
+    <string name="apply_production">Criar produção de projeto </string>
+    <string name="apply_non_standard_inquiry">Cotação via livro não baseado nos preços</string>
+    <string name="apply_spring_ring_inquiry">Armazenamento de arruelas de pressão</string>
+    <string name="apply_special_ship">Embarque especial</string>
+    <string name="apply_repayment">Informação da coleta</string>
+    <string name="apply_express">Expresso</string>
+    <string name="apply_travel">Viagem de negócios</string>
+    <!-- 審批 -->
+    <string name="approval">Aprovação</string>
+    <string name="approved">Foram aprovados(as)</string>
+    <string name="approval_status_unsign">Pendente</string>
+    <string name="approval_status_agree">Aprovado</string>
+    <string name="approval_status_disagree">Rejeitar</string>
+    <string name="approval_status_process">Aprovação</string>
+    <string name="approval_resend">Reenviar</string>
+    <string name="approver_unit">número de aprovadores</string>
+    <string name="approver">Aprovador</string>
+    <string name="approval_msg">Insira parecer de aprovação (opcional) </string>
+    <string name="approval_reason">Parecer da aprovação</string>
+    <string name="approval_require_unknown">Desconhecido(a)</string>
+    <string name="approval_require_need">Necessidade</string>
+    <string name="approval_require_not_need">Não é necessário</string>
+    <string name="approval_status">Status de aprovação</string>
+    <string name="approval_require">Precisa de aprovação?</string>
+    <string name="default_approver">Aprovador padrão</string>
+    <string name="change_to_default">Restabelecer padrões</string>
+    <string name="approval_stage">Nível de aprovação</string>
+    <string name="approval_description">Observação sobre aprovação</string>
+    <!-- 報銷 -->
+    <string name="exp">Reembolsos</string>
+    <string name="exp_document">Reembolsos</string>
+    <string name="exp_worker">Pares de vendas</string>
+    <string name="select_exp_target">Selecionar objeto de dedução</string>
+    <string name="exp_target">Objeto de dedução</string>
+    <string name="exp_item">Itens de reembolso</string>
+    <string name="exp_detail">Detalhes do reembolso</string>
+    <string name="exp_name">Nome do reembolso</string>
+    <string name="exp_add">Acrescentar item de reembolso</string>
+    <string name="exp_total">Valor total dos reembolsos</string>
+    <string name="exp_receipt">Recebimento</string>
+    <string name="exp_available">Cota de reembolso</string>
+    <string name="currency_used">Moeda corrente de uso</string>
+    <string name="exp_amount">Preço unitário</string>
+    <string name="exp_amount_limit">(Limite superior：%d)</string>
+    <string name="exp_time">Data de ocorrência do reembolso</string>
+    <string name="exp_user">Requerente do reembolso </string>
+    <string name="exp_count1">total</string>
+    <string name="exp_count2">Itens de reembolso</string>
+    <string name="reimbursement_approval_1">Aprovação nível 1</string>
+    <string name="reimbursement_approval_2">Aprovação nível 2</string>
+    <!-- 下載狀態 -->
+    <string name="download_failed">Falha no descarregamento de arquivos</string>
+    <string name="download_paused">Pausa no descarregamento de arquivos</string>
+    <string name="download_pending">Aguardando descarregamento</string>
+    <string name="download_running">Descarregamento de arquivos</string>
+    <string name="download_success">Descarregamento completo</string>
+    <!-- appbar -->
+    <string name="appbar_search_hint">Insira palavras-chave de pesquisa</string>
+    <!-- search result -->
+    <string name="error_search_empty">Palavras-chave da pesquisa não podem estar em branco</string>
+    <!-- 銷售機會 -->
+    <string name="sales_stage">Fase de vendas</string>
+    <string name="other_element">Outros fatores</string>
+    <string name="sales_type">Tipo de oportunidade</string>
+    <string name="sales_source">Oportunidade</string>
+    <string name="decision_element">Qual o motivo da decisão</string>
+    <string name="hint_decision_element">Resuma os elementos de tomada de decisão</string>
+    <string name="lose_reason">Motivo do caso perdido</string>
+    <string name="win_reason">Motivo do ganho</string>
+    <string name="reason_description">Motivo da descrição</string>
+    <string name="win">Caso ganho</string>
+    <string name="lose">Caso perdido</string>
+    <string name="change_to">Revisar para</string>
+    <!-- project history -->
+    <string name="new_history">Novo histórico</string>
+    <string name="new_sales">Nova oportunidade de vendas </string>
+    <string name="sales_percentage">Taxa de ganho</string>
+    <string name="history">Histórico</string>
+    <!-- week -->
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
+    <!-- week report -->
+    <string name="total_type_performance">Desempenho</string>
+    <string name="total_type_behavior">Tempo de atividade</string>
+    <string name="total_type_add">Criar </string>
+    <string name="customer_list">Detalhe do cliente</string>
+    <string name="task_unit">Projeto</string>
+    <string name="msg_no_task">Não agendou trabalho por enquanto</string>
+    <string name="report_win_amount">Montante de casos ganhos</string>
+    <string name="report_contract_amount">Montante do contrato</string>
+    <string name="report_lose">@string/lose</string>
+    <string name="report_sign_in">Verificar atividade</string>
+    <string name="report_sign_out">Confirmar atividade </string>
+    <string name="report_new_task">@string/main_menu_new_mission</string>
+    <string name="report_new_opportunity">Criar oportunidade de vendas</string>
+    <!-- month report -->
+    <string name="month_report">Relatório mensal</string>
+    <string name="current_month_report">O relatório mensal</string>
+    <string name="month_work_summary">Resumo de trabalho mensal</string>
+    <string name="hint_month_report">Insira conteúdos de relatório</string>
+    <string name="current_month_customer">O progresso dos novos clientes  do mês</string>
+    <string name="current_month_project">O acompanhamento do novo projeto do mês</string>
+    <string name="current_month_question">O resumo das emissões do mês</string>
+    <string name="next_month_plan">Plano do próximo mês</string>
+    <string name="next_month_visit_plan">Próximo Plano - Plano de atividade</string>
+    <string name="next_month_sales_goal">Alvos de venda do plano do próximo mês</string>
+    <string name="next_month_guide">Necessidade de orientação de plano do próximo mês</string>
+    <string name="month_report_sale_goal">Taxa de realização das oportunidades de vendas</string>
+    <string name="month_report_current_goal">Realização deste mês</string>
+    <string name="month_report_important_situation">Indústria importante, projetos ou mudança dinâmica de oportunidades de vendas </string>
+    <string name="month_report_potential_market">Mercado-alvo potencial</string>
+    <string name="month_report_compete_strategy">Sugestão sobre concorrência e estratégia de produto</string>
+    <string name="month_report_resource_investment">Sugestão de preparação de recursos ou qual o status para suporte e coordenação </string>
+    <string name="month_report_submit_msg">Enviar agora? (não pode revisar o relatório deste mês depois de enviado)</string>
+    <!-- 主選單項目 -->
+    <string name="main_menu_new_task">Criar trabalho</string>
+    <string name="main_menu_report">Relatório de trabalho</string>
+    <string name="main_menu_customer">Detalhes do cliente</string>
+    <string name="main_menu_approval_record">Detalhe enviado para aprovação</string>
+    <string name="main_menu_approval_sign">Aprovação</string>
+    <string name="main_menu_sample">Revisão da amostra</string>
+    <string name="main_menu_exp_record">Registro do reembolso</string>
+    <string name="main_menu_sales">@string/sale_opportunity</string>
+    <string name="main_menu_statistic">Relatório estatístico</string>
+    <string name="main_menu_personal">@string/person</string>
+    <string name="main_menu_setting">Configuração</string>
+    <string name="main_menu_new_customer">Criar cliente</string>
+    <string name="main_menu_new_contact_person">Criar pessoa de contato do cliente</string>
+    <string name="main_menu_new_exp">Criar reembolso</string>
+    <string name="main_menu_new_mission">Criar tarefa</string>
+    <!-- 統計圖表項目 -->
+    <string name="statistic_menu_target">Taxa de realização da meta pessoal</string>
+    <string name="statistic_menu_visit">Classificação da atividade de vendas para o consumidor final</string>
+    <string name="statistic_menu_performance">Desempenho de vendas</string>
+    <string name="statistic_menu_sign">Classificação da oportunidade de contratação estimada </string>
+    <string name="statistic_menu_win">Caso ganho de oportunidade de vendas </string>
+    <string name="statistic_menu_sale">@string/sale_opportunity</string>
+    <string name="goal">Meta</string>
+    <string name="current">Atual</string>
+    <string name="last_period">Período anterior</string>
+    <string name="goal_amount">Meta para o montante</string>
+    <string name="reach_amount">Montante alcançado</string>
+    <string name="compare_last_month">Comparar com o período anterior</string>
+    <string name="first_time_order">Ordens de Primeira vez</string>
+    <string name="confirm_order">Confirmar os números de pedidos</string>
+    <string name="team_rank">Classificação do mesmo grupo</string>
+    <string name="company_rank">Classificação da empresa</string>
+    <string name="rank_detail">Detalhe da classificação</string>
+    <string name="visit_count">Horários da atividade</string>
+    <string name="last_visit">Atividade mais recente</string>
+    <string name="last_item">Registro mais recente</string>
+    <string name="target">Objeto</string>
+    <string name="current_sale">O desempenho de vendas do mês</string>
+    <string name="all_sale">Todos os desempenhos de vendas</string>
+    <string name="sale_opportunity">Oportunidades de vendas</string>
+    <string name="current_sale_opportunity">Fase de vendas</string>
+    <string name="material">Classificação do material</string>
+    <string name="current_amount">Montante deste mês</string>
+    <string name="total_amount">Valor total</string>
+    <string name="filter_time">Período de tempo</string>
+    <string name="filter_personal">Por pessoas</string>
+    <string name="filter_department">Por departamento</string>
+    <string name="filter_company">Por canal</string>
+    <string name="filter_check_point">Indicador de desempenho</string>
+    <string name="filter_check_time">Tempo de avaliação</string>
+    <string name="filter_industry">Indústria do cliente</string>
+    <string name="filter_product">Por produtos</string>
+    <string name="filter_top_count">Números da classificação</string>
+    <string name="condition">Condição</string>
+    <string name="asc">Subir</string>
+    <string name="desc">Descer</string>
+    <string name="sort_by_amount">Por montante</string>
+    <string name="sort_by_time">Por data</string>
+    <!-- CustomerDetailActivity -->
+    <string name="tab_record">Registro do membro da equipe</string>
+    <string name="tab_item">@string/project</string>
+    <!-- 主選單設定 -->
+    <string name="fixed_item">Item fixo</string>
+    <string name="added_item">O Projeto foi selecionado</string>
+    <string name="not_add_item">Não adicionar Projeto</string>
+    <!-- 專案進行狀態 -->
+    <string name="project_status_all">Todos os projeto</string>
+    <string name="project_status_start">Início do projeto</string>
+    <string name="project_status_design">Seleção do projeto</string>
+    <string name="project_status_quote">Enviar cotação</string>
+    <string name="project_status_sample">Teste da amostra</string>
+    <string name="project_status_negotiation">Negociação</string>
+    <string name="project_status_win">@string/win</string>
+    <string name="project_status_lose">@string/lose</string>
+    <string name="project_status_win_lose">Caso ganho/perdido</string>
+
+    <string name="project_status">Fase</string>
+    <string name="project_status_1">Fase 1</string>
+    <string name="project_status_2">Fase 2</string>
+    <string name="project_status_3">Fase 3</string>
+    <string name="project_status_4">Fase 4</string>
+
+    <!-- 報銷項目 -->
+    <string name="exp_stay">Taxa de acomodação </string>
+    <string name="exp_traffic">Tarifa de transporte </string>
+    <string name="exp_eat">Despesas de refeições</string>
+    <string name="exp_gift">Doação </string>
+    <string name="exp_phone">Tarifa telefônica</string>
+    <string name="exp_private">Aplicar despesas por veículo pessoal</string>
+    <string name="exp_merge">Reembolso consolidado</string>
+    <string name="exp_extra">Desembolso extra</string>
+    <string name="exp_other">Outros</string>
+    <string name="exp_together">Nüshalar</string>
+
+    <!-- msg -->
+    <string name="msg_input_empty">Insira informação necessária</string>
+    <string name="msg_permission_denied">Não pode obter permissão, voltará à página anterior</string>
+    <string name="msg_permission_denied_forever">Não pode obter permissão, tente obter permissão via página de "Configurações"</string>
+    <!-- 樣品排序 -->
+    <string name="sample_sort_all">Todos</string>
+    <string name="sample_sort_date">Por data</string>
+    <string name="sample_sort_company">Por empresa</string>
+    <string name="sample_sort_type">Por categoria</string>
+    <!-- 客戶排序 -->
+    <string name="customer_sort_important">@string/important_customer</string>
+    <string name="customer_sort_area">Classificação por área</string>
+    <string name="customer_sort_time">Zaman sıralamasını ayarlayın</string>
+    <!-- 設定 -->
+    <string name="setting_color">Mudar a série da cor dos temas</string>
+    <string name="setting_about">Sobre a CRM</string>
+    <string name="setting_lock">Configuração de sinais</string>
+    <string name="setting_lock_change">Modificar sinais</string>
+    <string name="setting_lock_enable">Bloqueio de sinal</string>
+    <string name="setting_password_change">Alterar senha</string>
+    <string name="setting_guide">Guia do usuário</string>
+    <!-- 報銷單扣除種類 -->
+    <string name="reimbursement_type_self">Pessoal</string>
+    <string name="reimbursement_type_department">@string/department</string>
+    <string name="reimbursement_type_customer">Detalhes do cliente</string>
+    <!-- 電話類型 -->
+    <string name="phone_type">Tipo de telefone</string>
+    <string name="phone_type_home">Página inicial</string>
+    <string name="phone_type_company">Empresa</string>
+    <string name="phone_type_mobile">Telefone celular</string>
+    <string name="phone_type_primary">Principal</string>
+    <string name="phone_type_home_fax">Número do fax residencial</string>
+    <string name="phone_type_company_fax">Telefone (Fax) da empresa</string>
+    <string name="phone_type_other">Outros</string>
+    <!-- 請假類型 -->
+    <string name="absent_type">Tipo de saída</string>
+    <string name="absent_type_leave">Licença pessoal</string>
+    <string name="absent_type_sick">Licença médica</string>
+    <string name="absent_type_dead">Licença para funeral</string>
+    <string name="absent_type_marriage">Licença de casamento </string>
+    <string name="absent_type_maternity">Licença-maternidade </string>
+    <string name="absent_type_public">Licença oficial</string>
+    <string name="absent_type_taking_care">Cuidado</string>
+    <string name="absent_type_physiological">Licença menstrual</string>
+    <string name="absent_type_birthCheck">Controle de gravidez</string>
+    <string name="absent_type_paternity">Licença de paternidade</string>
+    <string name="absent_type_publicInjury">Lesão Pública</string>
+    <string name="absent_type_special">Banco de horas</string>
+    <string name="absent_type_unpaid">Nenhuma licença remunerada</string>
+    <!-- title -->
+    <string name="title_activity_news">Mensagem</string>
+    <string name="title_activity_schedule">Cronograma de trabalho</string>
+    <string name="title_activity_menu_setting">Configuração do botão de atalho</string>
+    <string name="title_activity_setting">Configuração</string>
+    <string name="title_activity_create">@string/main_menu_new_task</string>
+    <string name="title_activity_user_list">Pessoa de contato</string>
+    <string name="title_activity_customer_info">Dados do cliente</string>
+    <string name="title_activity_project">@string/project</string>
+    <string name="title_activity_sale">@string/sale_opportunity</string>
+    <string name="title_activity_sale_edit">Oportunidades de vendas</string>
+    <string name="title_activity_work_detail">Detalhar informações</string>
+    <string name="title_activity_conversation">Criar mensagem</string>
+    <string name="title_activity_personal">@string/main_menu_personal</string>
+    <string name="title_activity_week_report">Plano semanal</string>
+    <string name="title_activity_cancel_task">@string/cancel_task</string>
+    <string name="title_activity_delay_task">@string/delay_task</string>
+    <string name="title_activity_statistic">@string/main_menu_statistic</string>
+    <string name="title_activity_statistic_personal">Meta pessoal</string>
+    <string name="title_activity_sign_progress">Progresso da aprovação</string>
+    <string name="title_activity_exp_record">Progresso da aprovação</string>
+    <string name="title_activity_contact_create">Criar pessoa de contato</string>
+    <string name="title_activity_contact_select">Criar pessoa de contato</string>
+    <string name="title_activity_participant_select">Criar participantes</string>
+    <string name="title_activity_project_create">Criar projeto</string>
+    <string name="title_activity_customer_create">Criar cliente </string>
+    <string name="title_activity_customer_edit">Editar cliente</string>
+    <string name="title_activity_period_select">Tempo de definição por você mesmo</string>
+    <string name="title_activity_user_select">Selecionar objeto</string>
+    <string name="title_activity_location_select">Selecionar país ou região</string>
+    <string name="title_activity_approver_select">Selecionar aprovador</string>
+    <!-- lock -->
+    <string name="locker_msg">Desenhe o sinal gráfico (no mínimo 4 pontos)</string>
+    <string name="locker_unlock">Use sinal gráfica para desbloquear</string>
+    <string name="locker_lock">Estabeleça sinal gráfico para bloquear</string>
+    <string name="locker_input_again">Insira bloqueio gráfico outra vez</string>
+    <string name="lock_setting_success">Configuração do bloqueio gráfico bem sucedida</string>
+    <string name="error_lock_setting_failed">Bloqueio gráfico falhou, reinstalar</string>
+    <string name="error_lock_least_point">Insira no mínimo 4 pontos</string>
+    <!-- error msg -->
+    <string name="error_msg_empty">Sem dados</string>
+    <string name="error_msg_no_photo">Sem fotos relacionadas</string>
+    <string name="error_msg_no_approval">Esta viagem não precisa de aprovação</string>
+    <string name="error_msg_end_time_before_start_time">Hora final não pode ser antes da hora inicial </string>
+    <string name="error_msg_reimbursement_time_in_future">O tempo do reembolso não pode ser maior do que agora</string>
+    <string name="error_msg_reimbursement_limit">Exceder o limite superior</string>
+    <string name="error_msg_no_app">Nenhum aplicativo pode ser usado</string>
+    <string name="error_msg_no_customer">nenhum cliente selecionado</string>
+    <string name="error_msg_no_project">nenhum projeto selecionado</string>
+    <string name="error_msg_no_location">Localização é obrigatória</string>
+    <string name="error_msg_no_product">não criar produto</string>
+    <string name="error_msg_no_target">nenhum objeto de dedução selecionado</string>
+    <string name="error_msg_no_reimbursement_amount">Montante do reembolso é obrigatório</string>
+    <string name="error_msg_no_approval_selected">nenhum selecionado para aprovação</string>
+    <string name="error_msg_no_submit_selected">nenhum selecionado para apresentação</string>
+    <string name="error_msg_required">Não preenchido</string>
+    <string name="error_msg_google_play_service_not_available">Não pode iniciar o serviço do Google play</string>
+    <string name="error_msg_unknown">Ocorrência de erro desconhecido</string>
+    <string name="error_msg_handle_intent">Nenhum aplicativo pode ser usado</string>
+    <string name="error_msg_permission">sem permissão</string>
+    <string name="error_msg_input_required">o campo obrigatório não está preenchido</string>
+    <string name="error_msg_no_network">Operação on-line. Verifique seu dispositivo para conexão à internet</string>
+    <string name="error_msg_login">Não pode entrar, tente outra vez mais tarde</string>
+    <string name="error_msg_password_wrong">Senha incorreta. Insira senha original</string>
+    <string name="error_msg_password_confirm">Nova senha não corresponde, tente outra vez</string>
+    <string name="error_msg_customer_duplicate">Não pode criar cliente (o nome do cliente já existe)</string>
+    <string name="error_msg_gps_sign_in">Não pode verificar por GPS, tirar uma foto para confirmar</string>
+    <string name="error_msg_no_camera">Este dispositivo está sem câmera, não pode tirar fotos para iniciar sessão</string>
+    <string name="error_msg_no_report">Não preenchido Relatório de trabalho</string>
+    <string name="error_msg_format">Erro de formatação</string>
+    <string name="error_msg_discount_range">Faixa de desconto do produto de 0.01 a 9.99</string>
+    <string name="error_msg_token_expired">Fazer login outra vez</string>
+    <string name="error_msg_self_group">Não posso escolher o grupo por mim mesmo</string>
+    <string name="error_msg_customer_not_approval">Permissão do cliente é desativada</string>
+    <string name="error_msg_sales_opportunity_update">A configuração de oportunidades de vendas foi alterada, não pode acessar o último registro</string>
+    <string name="error_msg_sales_opportunity_not_found">Dados perdidos, não pode acessar o registro de oportunidades de vendas</string>
+    <string name="error_msg_code_not_found">sem número</string>
+    <string name="error_msg_not_sync">A sincronização de dados não foi concluída</string>
+    <string name="error_msg_not_get_gps">Não pode obter localização do GPS</string>
+    <string name="error_msg_gps_validation">Localização do GPS fora da faixa de validação</string>
+    <string name="error_msg_location_permission">Não pode obter permissão do GPS</string>
+    <string name="error_msg_opportunity_create_disable">Não pode ganhar oportunidades de vendas</string>
+<!-- 取消原因 -->
+    <string-array name="cancel_reason">
+       <item>Tem outra atividade</item>
+       <item>Designado para outras operações comerciais</item>
+       <item>Não pode combinar o cronograma</item>
+       <item>Programação de cancelamento do cliente</item>
+       <item>Outros fatores</item>
+    </string-array>
+    <!-- 搜尋時間 -->
+    <string-array name="search_time">
+       <item>Hoje</item>
+       <item>Ontem</item>
+       <item>Esta semana</item>
+       <item>O mês</item>
+       <item>Tempo de definição por você mesmo</item>
+    </string-array>
+    <!-- 時間範圍 -->
+    <string-array name="filter_time">
+       <item>O mês</item>
+       <item>Último mês</item>
+       <item>Esta estação</item>
+       <item>Última estação</item>
+       <item>Este ano</item>
+       <item>Ano anterior</item>
+       <item>O ano anterior</item>
+    </string-array>
+    <!-- 時間範圍 -->
+    <string-array name="filter_check_point">
+       <item>Valor total (contrato)</item>
+       <item>Valor total (faturamento)</item>
+    </string-array>
+    <!-- 考核時間 -->
+    <string-array name="filter_check_time">
+       <item>Data do contrato</item>
+    </string-array>
+    <!-- 貨幣單位 -->
+    <string-array name="currency">
+       <item>USD</item>
+       <item>RMB</item>
+       <item>NTD</item>
+       <item>JPY</item>
+       <item>GBP</item>
+    </string-array>
+    <!-- 選擇圖片方式 -->
+    <string-array name="select_photo">
+       <item>Tirar foto</item>
+       <item>Selecionar foto</item>
+    </string-array>
+    <!-- 選擇圖片方式 -->
+    <string-array name="unit_type">
+       <item>Número inteiro </item>
+       <item>Uma casa decimal</item>
+       <item>2 casas decimais</item>
+    </string-array>
+    <!-- 有/無 -->
+    <string-array name="have">
+       <item>Não</item>
+       <item>Sim</item>
+    </string-array>
+    <!-- 審請快遞樣品類型 -->
+    <string-array name="express_type">
+        <item>@string/express_type_free</item>
+        <item>@string/express_type_value</item>
+    </string-array>
+    <!-- 教學分類標題 -->
+    <string-array name="guide_category_title">
+       <item>Trabalho</item>
+       <item>Relacionamento do cliente</item>
+       <item>Aplicar/aprovação</item>
+       <item>Outros/Ajustes</item>
+    </string-array>
+    <!-- 教學標題 -->
+    <string-array name="guide_title">
+       <item>Criar visita</item>
+       <item>Aplicar cotação</item>
+       <item>Enviar relatório</item>
+       <item>Registro do reembolso</item>
+       <item>Oportunidades de vendas</item>
+       <item>Relatório estatístico</item>
+       <item>Detalhes do cliente</item>
+       <item>Cliente - Criar novo projeto </item>
+       <item>Cliente - Visualizar projeto de trabalho</item>
+       <item>Cliente - Criar histórico de trabalho</item>
+       <item>Cliente - Visualizar histórico de trabalho</item>
+       <item>Cliente - Criar etapa de vendas</item>
+       <item>Detalhe enviado para aprovação</item>
+       <item>Aprovação</item>
+       <item>Pessoal</item>
+       <item>Definição da senha do usuário</item>
+       <item>Definição manual da senha</item>
+    </string-array>
+  
+    <string-array name="crm_add_appointment">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Create Application] button in the menu </item>
+      <item>Click on the [Visit] item of the new appliction </item>
+      <item> Follow the steps to complete the required fields. Click [Finish] to complete the form to generate work item</item>
+      <item> After Visit schedule created, the calendar displayed it synchronously, then click task to view the detailed content </item>
+      <item> Click the Visit task, scrolls it to view more information</item>
+    </string-array>
+    <string-array name="crm_approval_quote">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Create Application] button in the menu </item>
+      <item>Click on the [Quotation] item of the new appliction </item>
+      <item> Follow the steps to complete the required fields. Click [Finish] to complete the form to generate work item</item>
+      <item> After Quotation created, the calendar displayed it synchronously, then click task to view the detailed content </item>
+      <item> Click the Quotation task, scrolls it to view more information</item>
+    </string-array>
+    <string-array name="crm_submit_quote">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Work Report] button in the menu </item>
+      <item> Click the monthly report pane ,then enter the work report list</item>
+      <item>1. At the header of the monthly report  page, you can view the total work activity summary for this month\n2. Scroll down and fill in the required field, then click the [Finish] button at the top right to save it</item>
+    </string-array>
+    <string-array name="crm_ledger">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Statistic report] button in the menu </item>
+      <item>Click on the select item in the statistical report (e.g. Achievement rate of personal goal)</item>
+      <item>1.  Through Achievement rate of personal goal, you can check whether your target and amount achieve this month expectations, and compare to the sales data of the previous period for analysis.\n2.Each statistical report can use filters to display differnet view</item>
+      <item>Use the filter criteria to narrow or enlarge the range of the displayed data. After setting, click [Finish] to return to the statistics chart to view the filter results.</item>
+    </string-array>
+    <string-array name="crm_client">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Customer details] button in the menu </item>
+      <item>1. Through the filter criteria: key customers, regional sorting, Sort by Alphabet can initially select customers\n2. Click on any customer to view specific information\n3. Browse more information by up and down gesture scrolling</item>
+      <item> 1. Enter the specific customer page, click the left selection button [group member records], you can browse releated business and activity records\n2. Browse more records by up and down gesture scrolling</item>
+      <item> 1. Click on the right side of the customer page [More >] to view the basic information of choosing customer\n2. Enter the specific customer page, click the right selection button [work item], you can see how many projects are in progress </item>
+      <item>Customer master data page can view the basic information and related contact persons </item>  
+    </string-array>
+    <string-array name="crm_client_add_project">
+      <item> Enter the specific customer details page, click the [+] arrow in [work item] to create a new project </item> 
+      <item> Step by step to fill in fields of the new project </item>
+      <item> If form is completed, then click the [Finish] button in the upper right corner to save it </item>  
+      <item> After saving,new project can be viewed in the [work item] list </item>
+    </string-array>
+    <string-array name="crm_client_add_salesstage">
+      <item> Enter the specific customer details page, click on the [percentage of sales stage] in selected project </item>
+      <item> Enter [percentage of sales stage], click on the top  [+ new sales opportunities] button</item>
+      <item> Enter the sales stage page, display the six sales stages, click the radio button of choosing stage to estimate win rate, by the way click the right down arrow could expand sub-progress under the stage</item>
+      <item>1. If choosing“Lost case”, you have to choose reason of lost \n2. After completing the filling, click the [Finish] button on the upper right to save it </item>
+      <item> After [percentage of sales stage] completion ,then click the [history] you can view events list during the current sales stage </item> 
+    </string-array>
+    <string-array name="crm_client_check_project">
+      <item> Enter the specific customer details page, click on the [work item] to preview work items</item>
+      <item>1.  Enter the work item page, scrolls it to view more information of the work item</item>
+    </string-array>
+    <string-array name="crm_client_add_history">
+      <item> Enter the specific customer page, click on the [history] in selected project </item>
+      <item> Enter [percentage of sales stage], click on the top  [+ new history] button</item>
+      <item> Before new history editing completely, you have to apply a new task (e.g. visit activity) </item>
+      <item> Step by step to fill in fields of the new application, click the [Finish] button on the upper right to save it </item>
+      <item> After [percentage of sales stage] completion ,then click the [history] you can view tasks list during the current sales stage </item> 
+    </string-array>
+    <string-array name="crm_client_check_history">
+      <item> Enter the specific customer details page, click on the [history] in selected project </item>
+      <item> Click the [history] button which choosed project under the [work item], history task list (from recent to the earliest) display by  sorted. Click specific task to view the detail </item>  
+      <item>Enter the  history page (e.g. Quotation task) , scrolls it to view more information of the quotation task</item>
+    </string-array>
+    <string-array name="crm_approval_list">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Application list] button in the menu </item>
+      <item>Click on the select item in the Application list (e.g.  Quotation task)</item>
+      <item>Enter Approval Details page,please click [submmit] button on the top of screen if your request aren\'t submmit,then this approval would send to approvor</item>
+      <item>1.Can select single submit or multi submit\n\n2.Click [Submit and send] below to finish submit job </item>
+      <item>There are three pages include unproved、passed、Deny that mean show state of approval</item>
+      <item>Click on of the list,scrolls it to view more information</item>
+    </string-array>
+    <string-array name="crm_execution">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Application Approval] button in the menu </item>
+      <item>Enter Approval page,Click [Approval button]to excute Approval</item>
+      <item>Select single Approval or multi approval in Approval page</item>
+      <item>Select [Agree] or [Deny] button in approval processing</item>
+      <item>Approver also can Fill opinion in approval processing，click [confirm] to finish approval</item>
+    </string-array>
+    <string-array name="crm_reimburse">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [reimbursement record] button in the menu </item>
+      <item>Select and review reimbursement record in list </item>
+      <item>Enter the  reimbursement page (e.g. Quotation task) , scrolls it to view more information</item>
+    </string-array>
+    <string-array name="crm_salesforce">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Sales opportunities] button in the menu </item>
+      <item>This page would show six stages,click arrow on the right side for each stage, would display detail infomation</item>
+      <item>1.for example as Stage 4,It\'s display all work items belong to stage 4\n\n2.click one of work item to review detail infomation </item>
+      <item>Enter the detail page of work item ,scroll up or down on the screen to dispaly more information</item>
+    </string-array>
+    <string-array name="crm_profile">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Personal] button in the menu </item>
+      <item>1.To edit or review personal data\n\n2.click [EDIT] to modify personal data </item>
+      <item>Click [Finish] to save it when edit form have done </item>
+    </string-array>
+    <string-array name="crm_setting_change_password">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Setup] button in the menu </item>
+      <item>Click [User Password]</item>
+      <item>Enter page of revise user password，input old password and tiwce new password，click [finish] when edit form have done</item>
+    </string-array>
+    <string-array name="crm_setting_gesture_lock">
+      <item>Click the [+] button at the bottom of the main page calendar </item>
+      <item> Click the [Setup] button in the menu </item>
+      <item>Click [graphic gesture settings]</item>
+      <item>Useing finger to Draw four point or more on the screen </item>
+      <item>Confirm your graphic gesture again to finish setting</item>
+      <item>1.The screen dispaly status of graphic gesture settings in on\n\n2.switching to OFF would be disable graphic gesture</item>
+    </string-array>
+</resources>
+
+

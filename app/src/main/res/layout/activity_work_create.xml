@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tw.com.masterhand.gmorscrm.activity.task.VisitCreateActivity">
+
+    <tw.com.masterhand.gmorscrm.view.AppbarEdit
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_transparent_v_8dp"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <tw.com.masterhand.gmorscrm.view.ItemSelectCustomer
+                    android:id="@+id/itemSelectCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"/>
+
+                <tw.com.masterhand.gmorscrm.view.ItemSelectProject
+                    android:id="@+id/itemSelectProject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btnVisitType"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_size"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/bg_input_required"
+                    android:drawableEnd="@mipmap/common_tri_down"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical|start"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="18dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/visit_normal"
+                    android:visibility="gone"/>
+
+                <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_size"
+                    android:background="@drawable/bg_input_required"
+                    android:hint="@string/hint_required"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColorHint="@color/red"
+                    app:title="@string/visit_name"/>
+
+                <tw.com.masterhand.gmorscrm.view.ItemSelectLocation
+                    android:id="@+id/itemSelectLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"/>
+            </LinearLayout>
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectTime
+                android:id="@+id/itemSelectTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectPeople
+                android:id="@+id/itemSelectPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectPhoto
+                android:id="@+id/itemSelectPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/containerReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/report" />
+
+                <EditText
+                    android:id="@+id/etReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_transparent"
+                    android:hint="@string/hint_note"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/note"/>
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_transparent"
+                    android:hint="@string/hint_note"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

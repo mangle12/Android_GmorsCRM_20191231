@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <tw.com.masterhand.gmorscrm.view.Appbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <LinearLayout
+        android:id="@+id/containerEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_size"
+        android:orientation="vertical"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/appbar_size">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/condition"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/iconStage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/bg_white_corner"/>
+
+                <TextView
+                    android:id="@+id/tvStage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:text="/"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_amount"/>
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/orange"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_transparent_v_8dp"
+                android:orientation="vertical"
+                android:showDividers="middle|end"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_transparent_stroke_gray_light">
+
+                <Button
+                    android:id="@+id/button_tab_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tab_left_selector"
+                    android:text="@string/sort_by_amount"/>
+
+                <Button
+                    android:id="@+id/button_tab_right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tab_right_selector"
+                    android:text="@string/sort_by_time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_transparent_v_8dp"
+                android:orientation="vertical"
+                android:showDividers="beginning|middle"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/containerFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/appbar_size"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/containerFilterItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@drawable/divider_transparent_v_3dp"
+            android:orientation="vertical"
+            android:showDividers="beginning|middle|end">
+
+            <tw.com.masterhand.gmorscrm.view.FilterTime
+                android:id="@+id/filterTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <tw.com.masterhand.gmorscrm.view.FilterPersonal
+                android:id="@+id/filterPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <tw.com.masterhand.gmorscrm.view.FilterDepartment
+                android:id="@+id/filterDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <tw.com.masterhand.gmorscrm.view.FilterCompany
+                android:id="@+id/filterCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <tw.com.masterhand.gmorscrm.view.FilterIndustry
+                android:id="@+id/filterIndustry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+            android:background="@color/colorPrimary"
+            android:text="@string/complete"/>
+    </LinearLayout>
+</RelativeLayout>

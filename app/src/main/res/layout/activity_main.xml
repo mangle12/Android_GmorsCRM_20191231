@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="tw.com.masterhand.gmorscrm.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/common_remind"/>
+
+            <TextView
+                android:id="@+id/textView_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_appber_right_number"
+                android:minWidth="20dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@mipmap/common_search"/>
+
+        <ImageButton
+            android:id="@+id/button_close"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@mipmap/common_close"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableCalendar"
+        android:layout_marginTop="-6dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_transparent_v_8dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:showDividers="middle|end">
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <tw.com.masterhand.gmorscrm.view.ExpandableCalendar
+        android:id="@+id/expandableCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_size" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/appbar_size"
+        android:background="@color/gray_light"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/bg_main_menu_toggle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-40dp"
+        android:src="@drawable/oval_color_primary"/>
+
+    <ImageButton
+        android:id="@+id/button_main_menu_toggle"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:scaleType="center"
+        android:src="@mipmap/common_open_menu"/>
+
+
+</RelativeLayout>

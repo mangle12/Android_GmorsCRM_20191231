@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/btn_size"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingEnd="0dp"
+              android:paddingStart="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:drawableStart="@drawable/check_sale_selector"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:minWidth="20dp"
+        android:text="aaa"/>
+
+    <TextView
+        android:id="@+id/tvPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="textView_subtitle"
+        android:textColor="@color/orange"/>
+
+</LinearLayout>

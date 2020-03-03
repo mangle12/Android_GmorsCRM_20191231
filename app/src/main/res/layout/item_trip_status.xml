@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:background="@color/gray_light"
+              android:orientation="vertical"
+              android:paddingBottom="8dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/textView_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="16dp"
+        android:text="@string/reason"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_size"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="8dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/textView_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/common_start_yet"
+            android:gravity="center"
+            android:text="@string/uncompleted"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_status_function"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_white_corner"
+            android:divider="@drawable/divider_gray_h"
+            android:dividerPadding="10dp"
+            android:showDividers="middle"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/cancel_task"
+                android:textColor="@color/red"/>
+
+            <Button
+                android:id="@+id/button_delay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/delay_task"
+                android:textColor="@color/orange"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_complete_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingStart="16dp"
+            android:text="@string/complete_time"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

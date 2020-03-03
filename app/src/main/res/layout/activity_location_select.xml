@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tw.com.masterhand.gmorscrm.CustomerSelectActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:scaleType="center"
+            android:src="@mipmap/common_left_black"/>
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_edittext_height"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="@dimen/btn_size"
+            android:background="@drawable/bg_appbar_search"
+            android:hint="@string/appbar_search_hint"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@mipmap/common_search"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_transparent_v_8dp"
+            android:orientation="vertical"
+            android:showDividers="beginning|middle"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <tw.com.masterhand.gmorscrm.view.AppbarEdit
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_transparent_v"
+            android:orientation="vertical"
+            android:showDividers="beginning|middle">
+
+            <tw.com.masterhand.gmorscrm.view.Dropdown
+                android:id="@+id/dropdownCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dropdown_color="@color/sample"
+                app:dropdown_required="true"
+                app:dropdown_title="@string/sample_item_category"/>
+
+            <tw.com.masterhand.gmorscrm.view.Dropdown
+                android:id="@+id/dropdownType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dropdown_color="@color/sample"
+                app:dropdown_required="true"
+                app:dropdown_title="@string/sample_item_type"/>
+
+            <tw.com.masterhand.gmorscrm.view.Dropdown
+                android:id="@+id/dropdownReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dropdown_color="@color/sample"
+                app:dropdown_required="false"
+                app:dropdown_title="@string/sample_item_report"/>
+
+            <!--<tw.com.masterhand.gmorscrm.view.Dropdown-->
+            <!--android:id="@+id/dropdownCompanyStock"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:dropdown_color="@color/sample"-->
+            <!--app:dropdown_item="@array/have"-->
+            <!--app:dropdown_required="true"-->
+            <!--app:dropdown_title="@string/sample_item_company_stock"/>-->
+
+            <!--<tw.com.masterhand.gmorscrm.view.Dropdown-->
+            <!--android:id="@+id/dropdownProviderStock"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:dropdown_color="@color/sample"-->
+            <!--app:dropdown_item="@array/have"-->
+            <!--app:dropdown_required="false"-->
+            <!--app:dropdown_title="@string/sample_item_provider_stock"/>-->
+
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etCount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_sample_required"
+                android:digits="0123456789"
+                android:hint="@string/hint_required"
+                android:inputType="number"
+                android:textColorHint="@color/red"
+                app:title="@string/sample_item_count"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etYearCount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_sample_required"
+                android:digits="0123456789"
+                android:hint="@string/hint_not_required"
+                android:inputType="number"
+                app:title="@string/sample_item_year_count"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_sample_required"
+                android:hint="@string/hint_required"
+                android:inputType="text"
+                android:textColorHint="@color/red"
+                app:title="@string/sample_item_code"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/sample_item_other"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/sample_item_other_example"/>
+
+                <EditText
+                    android:id="@+id/etOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_transparent"
+                    android:hint="@string/hint_not_required"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="numberDecimal"
+                app:title="@string/sample_item_price"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etTotal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@color/gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="numberDecimal"
+                app:title="@string/sample_item_total"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gray_light_corner"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@mipmap/common_customer_logo"/>
+
+    <LinearLayout
+        android:id="@+id/containerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView_icon"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginEnd="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textView_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:textColor="@color/gray"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textView_address"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/containerName"
+        android:layout_toStartOf="@+id/imageView_map"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"/>
+
+    <ImageView
+        android:id="@+id/imageView_map"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView_address"
+        app:srcCompat="@mipmap/common_address"/>
+</RelativeLayout>

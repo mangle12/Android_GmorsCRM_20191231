@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_gray_light_corner"
+              android:divider="@drawable/divider_gray_v"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <tw.com.masterhand.gmorscrm.view.ItemMessage
+            android:id="@+id/itemMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/button_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@color/transparent"
+            android:minWidth="@dimen/btn_size"
+            android:text="@string/reply"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:divider="@drawable/divider_transparent_v_8dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:showDividers="middle"/>
+</LinearLayout>

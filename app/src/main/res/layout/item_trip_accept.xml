@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_light"
+                android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_white_corner"
+        android:divider="@drawable/divider_gray_light_h"
+        android:dividerPadding="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <Button
+            android:id="@+id/btnAcceptNo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_accept_no_selector"
+            android:text="@string/accept_no"
+            android:textColor="@color/item_trip_accept"/>
+
+        <Button
+            android:id="@+id/btnAcceptMaybe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_accept_maybe_selector"
+            android:text="@string/accept_maybe"
+            android:textColor="@color/item_trip_accept"/>
+
+        <Button
+            android:id="@+id/btnAcceptYes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_accept_yes_selector"
+            android:text="@string/accept_yes"
+            android:textColor="@color/item_trip_accept"/>
+    </LinearLayout>
+
+</RelativeLayout>

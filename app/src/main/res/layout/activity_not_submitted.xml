@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:scaleType="center"
+            android:src="@mipmap/common_left_black"/>
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_edittext_height"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="@dimen/btn_size"
+            android:background="@drawable/bg_appbar_search"
+            android:hint="@string/appbar_search_hint"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btnSelectAll"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:layout_toStartOf="@+id/btnSearch"
+            android:background="@color/transparent"
+            android:minWidth="50dp"
+            android:text="@string/select_all"/>
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@mipmap/common_search"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnSend"
+        android:layout_marginTop="@dimen/appbar_size"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableStart="@mipmap/approval_sendout"
+            android:gravity="center_vertical"
+            android:text="@string/batch_submit"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</RelativeLayout>

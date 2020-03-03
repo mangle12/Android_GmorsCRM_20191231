@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:divider="@drawable/divider_white_v"
+              android:orientation="vertical"
+              android:showDividers="middle">
+
+    <Switch
+        android:id="@+id/switchAllDay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:background="@color/gray_light"
+        android:checked="false"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="@string/all_day"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:background="@color/gray_light"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/tvStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/start"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_size"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|end"
+            android:text="2016年04月25日 12:00"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:background="@color/gray_light"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/tvEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/end"/>
+
+        <Button
+            android:id="@+id/btnEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_size"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|end"
+            android:text="2016年04月25日 14:00"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerAlert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:background="@color/gray_light"
+        android:paddingEnd="8dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/alert"/>
+
+        <TextView
+            android:id="@+id/tvAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@mipmap/common_right_thin"
+            android:drawableTint="@color/black"
+            android:gravity="center_vertical"
+            android:text="@string/alert_no"
+            android:textColor="@color/gray"/>
+    </RelativeLayout>
+</LinearLayout>

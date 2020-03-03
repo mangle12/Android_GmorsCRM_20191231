@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/gray_dark_extra">
+
+        <TextView
+            android:id="@+id/textView_calendar_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/textView_calendar_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView_calendar_month"
+            android:paddingEnd="0dp"
+            android:paddingStart="@dimen/padding"
+            android:textColor="@color/gray_dark"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_calendar_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/button_calendar_control_left"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/calender_control_height"
+                android:background="@drawable/bg_calendar_left"
+                android:text="@string/today"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/button_calendar_control_right"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/calender_control_height"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_calendar_right"
+                android:text="@string/more"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_calendar_expanded_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/button_calendar_expanded_control_left"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/calender_control_height"
+                android:background="@drawable/bg_calendar_left"
+                android:src="@mipmap/common_btn_lastweek"/>
+
+            <Button
+                android:id="@+id/button_calendar_expanded_control_today"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/calender_control_height"
+                android:layout_marginStart="@dimen/padding"
+                android:layout_toEndOf="@+id/button_calendar_expanded_control_left"
+                android:background="@drawable/bg_calendar_control"
+                android:text="@string/today"
+                android:textColor="@color/gray"/>
+
+            <ImageButton
+                android:id="@+id/button_calendar_expanded_control_right"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/calender_control_height"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_calendar_right"
+                android:src="@mipmap/common_btn_nextweek"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <tw.com.masterhand.gmorscrm.view.ObservableHorizontalScrollView
+        android:id="@+id/scrollView_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calender_cell_height"
+        android:background="@drawable/bg_calendar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider_white_h"
+            android:dividerPadding="15dp"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+        </LinearLayout>
+
+    </tw.com.masterhand.gmorscrm.view.ObservableHorizontalScrollView>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout_calendar_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_dark_extra"
+        android:visibility="gone"
+        app:alignmentMode="alignBounds"
+        app:columnCount="7"
+        app:rowCount="8"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemNews">
+        <attr name="text" format="string"/>
+        <attr name="image" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MaterialLockView">
+        <attr name="LOCK_COLOR" format="color"/>
+        <attr name="WRONG_COLOR" format="color"/>
+        <attr name="CORRECT_COLOR" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="ArcProgressBar">
+        <attr name="BACKGROUND_COLOR" format="color"/>
+        <attr name="LAST_YEAR_COLOR" format="color"/>
+        <attr name="CURRENT_YEAR_COLOR" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="EditTextWithTitle">
+        <attr name="android:inputType" format="integer"/>
+        <attr name="android:maxLines" format="integer"/>
+        <attr name="android:hint" format="string"/>
+        <attr name="android:textColorHint" format="color"/>
+        <attr name="android:digits" format="string"/>
+        <attr name="title" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="Dropdown">
+        <attr name="dropdown_title" format="string"/>
+        <attr name="dropdown_item" format="reference"/>
+        <attr name="dropdown_color" format="color"/>
+        <attr name="dropdown_required" format="boolean"/>
+        <attr name="dropdown_icon" format="reference"/>
+    </declare-styleable>
+</resources>

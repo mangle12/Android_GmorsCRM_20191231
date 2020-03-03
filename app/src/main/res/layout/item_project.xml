@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/bg_gray_light_corner"
+                android:paddingTop="10dp">
+
+
+    <TextView
+        android:id="@+id/textView_index"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toStartOf="@+id/containerFunction"
+        android:orientation="vertical"
+        android:paddingStart="3dp">
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/empty_show"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvProjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingTop="5dp"
+            android:text="@string/empty_show"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingTop="5dp"
+            android:text="預估金額:"
+            android:textColor="@color/orange"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerFunction"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:divider="@drawable/divider_gray_v"
+        android:dividerPadding="5dp"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:id="@+id/btnOpportunity"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvOpportunityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_sale_opportunity"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvOpportunity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tvOpportunityPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="3dp"
+                        android:text="%"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tvHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableBottom="@mipmap/ommon_calendar"
+                android:text="@string/history"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/containerFunction"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/project_status_design"
+            android:textColor="@color/tab_sale"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/project_status_quote"
+            android:textColor="@color/tab_sale"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/project_status_sample"
+            android:textColor="@color/tab_sale"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/project_status_negotiation"
+            android:textColor="@color/tab_sale"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/project_status_win_lose"
+            android:textColor="@color/tab_sale"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/containerFunction">
+
+        <View
+            android:id="@+id/progress_gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/progress_thin_gray"/>
+
+        <View
+            android:id="@+id/progress_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/progress_thin_black"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/containerFunction"
+        android:background="@color/black"/>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rootView"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:layout_marginTop="16dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:divider="@drawable/divider_gray_light_h"
+        android:dividerPadding="10dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingEnd="5dp"
+            android:paddingStart="0dp">
+
+            <TextView
+                android:id="@+id/textView_goal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_amount"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_goal_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/empty_show"
+                android:textColor="@color/green"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textView_goal_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/money_unit"
+                android:textColor="@color/gray"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:id="@+id/textView_reach_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_amount"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_reach_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/empty_show"
+                android:textColor="@color/green"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textView_reach_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/money_unit"
+                android:textColor="@color/gray"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/compare_last_month"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_diff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="0%"
+                android:textColor="@color/green"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_reach"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_statistic_personal"/>
+</LinearLayout>

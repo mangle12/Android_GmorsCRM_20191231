@@ -1,0 +1,7 @@
+<resources>
+    <!--   Show STL -->
+    <string name="stl_load_progress_message">3D模型加载中</string>
+    <string name="stl_load_progress_title">加载3D模型</string>
+    <string name="error_fetch_data">3D模型解析失败</string>
+    <string name="error_too_big">3D模型过大，解析失败</string>
+</resources>

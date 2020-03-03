@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <tw.com.masterhand.gmorscrm.view.AppbarEdit
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_white_v"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:showDividers="middle">
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_non_standard_inquiry_required"
+                android:hint="@string/hint_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/red"
+                app:title="@string/product_code"/>
+
+            <tw.com.masterhand.gmorscrm.view.Dropdown
+                android:id="@+id/dropdownCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dropdown_color="@color/non_standard_inquiry"
+                app:dropdown_required="true"
+                app:dropdown_title="@string/product_category"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_non_standard_inquiry_required"
+                android:hint="@string/hint_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/red"
+                app:title="@string/non_standard_inquiry_product_name"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etCount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_non_standard_inquiry_required"
+                android:hint="@string/hint_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/red"
+                app:title="@string/inquiry_count"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etSize"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/size"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etTolerance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/tolerance"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/non_standard_inquiry_product_material"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etHardness"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/hardness"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etColor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/color"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etCertification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/certification"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etWrapping"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/wrapping"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etReference"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/reference_number"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etMedium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/medium"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/temperature"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etPressure"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/pressure"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etStatus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/non_standard_inquiry_product_status"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/line_speed"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etYearCount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:digits="0123456789"
+                android:hint="@string/hint_not_required"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/year_count"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note"/>
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="top|start"
+                    android:hint="@string/hint_note"
+                    android:inputType="textMultiLine"
+                    android:minHeight="60dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

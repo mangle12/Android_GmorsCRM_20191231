@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <tw.com.masterhand.gmorscrm.view.AppbarEdit
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_white_v"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:showDividers="middle">
+
+            <tw.com.masterhand.gmorscrm.view.Dropdown
+                android:id="@+id/dropdownCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dropdown_color="@color/special_price"
+                app:dropdown_required="true"
+                app:dropdown_title="@string/product_category"/>
+
+            <tw.com.masterhand.gmorscrm.view.Dropdown
+                android:id="@+id/dropdownProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dropdown_color="@color/special_price"
+                app:dropdown_required="false"
+                app:dropdown_title="@string/product"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etCount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_special_price_required"
+                android:digits="0123456789"
+                android:hint="@string/hint_required"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/red"
+                app:title="@string/product_count"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etAmount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_special_price_required"
+                android:hint="@string/hint_required"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/red"
+                app:title="@string/special_price_amount"/>
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectDiscount
+                android:id="@+id/itemSelectDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_special_price_required"/>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etCompetitor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:title="@string/competitor_amount"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/special_price_description"/>
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="top|start"
+                    android:hint="@string/hint_required"
+                    android:inputType="textMultiLine"
+                    android:minHeight="60dp"
+                    android:textColorHint="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"/>
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="top|start"
+                    android:hint="@string/hint_note"
+                    android:inputType="textMultiLine"
+                    android:minHeight="60dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

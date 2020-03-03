@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tw.com.masterhand.gmorscrm.MenuSettingActivity">
+
+    <tw.com.masterhand.gmorscrm.view.AppbarEdit
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_gray_v"
+            android:orientation="vertical"
+            android:showDividers="middle|end">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/fixed_item"
+                android:textColor="@color/gray"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_fixed_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/added_item"
+                android:textColor="@color/gray"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_added_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/not_add_item"
+                android:textColor="@color/gray"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_not_add_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:orientation="vertical"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

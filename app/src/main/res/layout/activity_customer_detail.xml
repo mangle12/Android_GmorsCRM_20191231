@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.com.masterhand.gmorscrm.activity.customer.CustomerDetailActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="350dp">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_transparent_v_8dp"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            android:showDividers="middle"/>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:padding="8dp"
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="bottom"
+        app:layout_behavior="tw.com.masterhand.gmorscrm.view.HeaderBehavior"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_anchor="@+id/relativeLayout_top"
+        app:layout_anchorGravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_tab_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_record"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/bg_tab_button_selector"
+                android:text="@string/tab_record"
+                android:textColor="@color/tab_button"/>
+
+            <Button
+                android:id="@+id/button_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_button_selector"
+                android:text="@string/tab_item"
+                android:textColor="@color/tab_button"/>
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+            android:layout_below="@+id/linearLayout_tab_item"
+            android:visibility="gone"
+            app:tabBackground="@color/gray_light"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="150dp"
+            app:tabMinWidth="100dp"
+            app:tabMode="scrollable"
+            app:tabPaddingBottom="-1dp"
+            app:tabPaddingEnd="-1dp"
+            app:tabPaddingStart="-1dp"
+            app:tabPaddingTop="-1dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tabLayout"
+            android:background="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_add"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_size"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/common_add"/>
+    </RelativeLayout>
+
+
+    <tw.com.masterhand.gmorscrm.view.Appbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+</android.support.design.widget.CoordinatorLayout>

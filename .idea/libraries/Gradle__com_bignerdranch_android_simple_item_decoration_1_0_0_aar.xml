@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bignerdranch.android:simple-item-decoration:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80fff186f5b7f665241c77c72f2f9a13/simple-item-decoration-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80fff186f5b7f665241c77c72f2f9a13/simple-item-decoration-1.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bignerdranch.android/simple-item-decoration/1.0.0/9ba91e0f6dafec3b1916e8cf435c2432fc407f2e/simple-item-decoration-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bignerdranch.android/simple-item-decoration/1.0.0/d5cfcfe8994c40c8b8c81b3da9462d1f27a21c70/simple-item-decoration-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

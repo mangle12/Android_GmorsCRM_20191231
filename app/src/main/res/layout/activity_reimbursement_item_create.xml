@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tw.com.masterhand.gmorscrm.activity.task.ReimbursementCreateActivity">
+
+    <tw.com.masterhand.gmorscrm.view.AppbarEdit
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_transparent_v"
+            android:orientation="vertical"
+            android:showDividers="beginning|middle">
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectCustomer
+                android:id="@+id/itemSelectCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_reimbursement_required"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/exp_item" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/empty_show" />
+            </RelativeLayout>
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectTime
+                android:id="@+id/itemSelectTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etTogether"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@color/gray_light"
+                android:hint="@string/hint_not_required"
+                android:inputType="text"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:title="@string/exp_together" />
+
+            <LinearLayout
+                android:id="@+id/containerTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/select_exp_target" />
+
+                    <TextView
+                        android:id="@+id/tvTarget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:clickable="true"
+                        android:drawableEnd="@mipmap/common_right_black"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/reimbursement_type_self" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_white_corner"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvQuota"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tvLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                android:id="@+id/etAmount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:background="@drawable/bg_quotation_required"
+                android:hint="@string/hint_required"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/red"
+                app:title="@string/exp_amount" />
+
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectPhoto
+                android:id="@+id/itemSelectPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/note" />
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_transparent"
+                    android:hint="@string/hint_note"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

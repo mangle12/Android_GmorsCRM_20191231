@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_week_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.com.masterhand.gmorscrm.activity.report.WeekReportActivity">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:minWidth="48dp"
+            android:text="@string/back"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/month_report"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:minWidth="48dp"
+            android:text="@string/submit"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/month_work_summary"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvPeriod"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <LinearLayout
+                android:id="@+id/container_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_transparent_h_3dp"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:showDividers="middle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_transparent_v_3dp"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:id="@+id/containerSaleGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/month_report_sale_goal"/>
+
+                    <EditText
+                        android:id="@+id/etSaleGoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerCurrentGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/month_report_current_goal"/>
+
+                    <EditText
+                        android:id="@+id/etCurrentGoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerImportantSituation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/month_report_important_situation"/>
+
+                    <EditText
+                        android:id="@+id/etImportantSituation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerPotentialMarket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/month_report_potential_market"/>
+
+                    <EditText
+                        android:id="@+id/etPotentialMarket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerCompeteStrategy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/month_report_compete_strategy"/>
+
+                    <EditText
+                        android:id="@+id/etCompeteStrategy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerResourceInvestment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/month_report_resource_investment"/>
+
+                    <EditText
+                        android:id="@+id/etResourceInvestment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerCurrentCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/current_month_customer"/>
+
+                    <EditText
+                        android:id="@+id/etCurrentCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerCurrentProject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/current_month_project"/>
+
+                    <EditText
+                        android:id="@+id/etCurrentProject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerCurrentQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/current_month_question"/>
+
+                    <EditText
+                        android:id="@+id/etCurrentQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerNextPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/next_month_plan"/>
+
+                    <EditText
+                        android:id="@+id/etNextPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerNextVisit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/next_month_visit_plan"/>
+
+                    <EditText
+                        android:id="@+id/etNextVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerNextGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/next_month_sales_goal"/>
+
+                    <EditText
+                        android:id="@+id/etNextGoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerNextGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_light"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/next_month_guide"/>
+
+                    <EditText
+                        android:id="@+id/etNextGuide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="@string/hint_required"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="5dp"
+                        android:textColorHint="@color/red"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnTranslation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/common_button_translate_chi"
+        android:visibility="gone"/>
+</RelativeLayout>

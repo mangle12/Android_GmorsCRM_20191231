@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gray_light_corner">
+
+    <LinearLayout
+        android:id="@+id/containerTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/leftBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/empty_show"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/containerTopBar"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_signin"
+        android:drawablePadding="3dp"
+        android:drawableStart="@mipmap/submit"
+        android:gravity="center_vertical"
+        android:minWidth="70dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="@string/not_submitted"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerTopBar"
+        android:layout_marginTop="-1dp"
+        android:divider="@drawable/divider_transparent_v_8dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="00:00-00:00"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/empty_show"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:text="@string/empty_show"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvReportNotComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:padding="8dp"
+        android:text="@string/error_msg_no_report"
+        android:textColor="@color/red"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ivSync"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/containerTopBar"
+        android:layout_margin="3dp"
+        android:background="@drawable/oval_red"
+        android:scaleType="fitCenter"/>
+</RelativeLayout>

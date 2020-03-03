@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <tw.com.masterhand.gmorscrm.view.Appbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_light"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@drawable/divider_gray_light_h"
+            android:dividerPadding="8dp"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/btnUnsign"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_size"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_approval_selector"
+                android:text="@string/approval_status_unsign"
+                android:textColor="@color/tab_approval"/>
+
+            <Button
+                android:id="@+id/btnAgree"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_size"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_approval_selector"
+                android:text="@string/approval_status_agree"
+                android:textColor="@color/tab_approval"/>
+
+            <Button
+                android:id="@+id/btnDisagree"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_size"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_approval_selector"
+                android:text="@string/approval_status_disagree"
+                android:textColor="@color/tab_approval"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_transparent_v_3dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:showDividers="beginning|middle"/>
+    </ScrollView>
+</LinearLayout>

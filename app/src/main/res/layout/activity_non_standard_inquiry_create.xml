@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <tw.com.masterhand.gmorscrm.view.AppbarEdit
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_transparent_v_8dp"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectCustomer
+                android:id="@+id/itemSelectCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectProject
+                android:id="@+id/itemSelectProject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_transparent_v"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_size"
+                    android:background="@drawable/bg_non_standard_inquiry_required"
+                    android:hint="@string/hint_required"
+                    android:inputType="text"
+                    android:textColorHint="@color/red"
+                    app:title="@string/non_standard_inquiry_name"/>
+
+                <tw.com.masterhand.gmorscrm.view.EditTextWithTitle
+                    android:id="@+id/etCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_size"
+                    android:background="@drawable/bg_non_standard_inquiry_required"
+                    android:hint="@string/hint_purchase_input"
+                    android:inputType="text"
+                    android:textColorHint="@color/red"
+                    app:title="@string/non_standard_inquiry_code"/>
+
+                <tw.com.masterhand.gmorscrm.view.Dropdown
+                    android:id="@+id/dropdownNeedParity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dropdown_color="@color/non_standard_inquiry"
+                    app:dropdown_item="@array/have"
+                    app:dropdown_required="true"
+                    app:dropdown_title="@string/non_standard_inquiry_need_parity"/>
+
+                <tw.com.masterhand.gmorscrm.view.Dropdown
+                    android:id="@+id/dropdownOffice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dropdown_color="@color/non_standard_inquiry"
+                    app:dropdown_required="true"
+                    app:dropdown_title="@string/non_standard_inquiry_office"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAddProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_transparent_dash_gray_light"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@mipmap/common_select_customer"
+                    android:padding="16dp"
+                    android:text="@string/add_product"
+                    android:textColor="@color/gray"/>
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_white_v"
+                    android:orientation="vertical"
+                    android:showDividers="middle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/non_standard_inquiry_note"/>
+
+                <EditText
+                    android:id="@+id/etSpecial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_transparent"
+                    android:hint="@string/hint_not_required"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <tw.com.masterhand.gmorscrm.view.Dropdown
+                android:id="@+id/dropdownAssistant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dropdown_color="@color/non_standard_inquiry"
+                app:dropdown_required="false"
+                app:dropdown_title="@string/assistant"/>
+
+            <tw.com.masterhand.gmorscrm.view.ItemSelectPhoto
+                android:id="@+id/itemSelectPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_light"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/note"/>
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_transparent"
+                    android:hint="@string/hint_not_required"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

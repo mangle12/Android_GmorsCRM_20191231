@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvImportant"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_size"
+        android:background="@color/gray_dark_extra"
+        android:drawablePadding="8dp"
+        android:drawableStart="@mipmap/common_top_client"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:text="@string/important_customer"
+        android:textColor="@color/white"/>
+
+    <tw.com.masterhand.gmorscrm.view.CompanyCard
+        android:id="@+id/companyCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/textView_customer_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/list_size"
+            android:text="@string/empty_show" />
+    </tw.com.masterhand.gmorscrm.view.CompanyCard>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_size"
+        android:background="@color/gray_light">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_dark_extra"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingEnd="0dp"
+            android:paddingStart="16dp"
+            android:text="@string/basic_info"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_gray_v"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:showDividers="middle|end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/principal"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/group"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerIndustry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/industry"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_industry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerCustomerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/customer_type"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_customer_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/containerProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/product"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/customer_level"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_customer_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/customer_team"
+                android:textColor="@color/gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/customer_source"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_customer_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/phone"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"
+                android:textColorLink="@color/blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/uniform_id"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_uniform_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/website"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"
+                android:textColorLink="@color/blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/builder"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/textView_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:minHeight="@dimen/list_size"
+                android:text="@string/empty_show"
+                android:textColorLink="@color/blue"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_size"
+        android:background="@color/gray_light">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_dark_extra"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_add_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:src="@mipmap/common_add"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="0dp"
+            android:paddingStart="16dp"
+            android:text="@string/contact"/>
+    </RelativeLayout>
+
+    <tw.com.masterhand.gmorscrm.view.HorizontalPageView
+        android:id="@+id/scrollView_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/container_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_transparent_h_3dp"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end"/>
+    </tw.com.masterhand.gmorscrm.view.HorizontalPageView>
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/center"
+            android:layout_toStartOf="@+id/center"
+            android:text="2"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/textView_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/center"
+            android:layout_toEndOf="@+id/center"
+            android:text="9"
+            android:textColor="@color/gray"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="/"
+            android:textColor="@color/gray"
+            android:textSize="30sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"/>
+    </RelativeLayout>
+</LinearLayout>

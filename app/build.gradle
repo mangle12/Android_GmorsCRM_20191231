@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    //發行時簽名檔
+    signingConfigs {
+        release {
+            keyAlias 'release'
+            keyPassword 'tw.com.masterhand.gmorscrm'
+            storeFile file('../key/gmors_crm.jks')
+            storePassword 'tw.com.masterhand.gmorscrm'
+        }
+        debug {
+            keyAlias 'debug'
+            keyPassword 'android'
+            storeFile file('../key/gmors_crm.jks')
+            storePassword 'tw.com.masterhand.gmorscrm'
+        }
+    }
+
+    defaultConfig {
+        applicationId "tw.com.masterhand.gmorscrm"
+        multiDexEnabled true
+        minSdkVersion 17
+        targetSdkVersion 28
+        buildConfigField "boolean", "IS_DEBUG", "true"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = ['jni']
+            jniLibs.srcDirs = ['libs-cpufeatures', 'libs-zip']
+        }
+    }
+
+    //加快構建速度
+    dexOptions {
+        jumboMode true //支持大工程模式
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'  //apk加密
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions("default")
+    productFlavors {
+        // 中山廠測試版
+        china {
+            applicationIdSuffix ".debug"
+            dimension "default"
+            versionCode 258
+            versionName "1.0.258"
+            resValue "string", "app_name", "CRM_中山测"
+        }
+        // 中山廠正式版
+        china_formal {
+            dimension "default"
+            versionCode 259
+            versionName "1.0.259"
+            resValue "string", "app_name", "CRM"
+        }
+        // 全球測試版
+        global {
+            applicationIdSuffix ".global.debug"
+            dimension "default"
+            versionCode 260
+            versionName "1.0.260"
+            resValue "string", "app_name", "GMORS CRM_T"
+        }
+        // 全球正式版
+        global_formal {
+            applicationIdSuffix ".global"
+            dimension "default"
+            versionCode 261
+            versionName "1.0.261"
+            resValue "string", "app_name", "GMORS CRM"
+        }
+    }
+}
+repositories {
+    maven { url 'https://maven.google.com' }
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo' }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation "com.android.support:support-v4:$supportLibVersion"
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:support-media-compat:$supportLibVersion"
+    implementation "com.android.support:gridlayout-v7:$supportLibVersion"
+    implementation "com.android.support:recyclerview-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation 'rebus:permission-utils:1.0.7'// 權限管理
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
+    implementation "com.jakewharton:butterknife:$butterknifeVersion"
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+    implementation project(':stlview')// 3D模型
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.3'// 監看database工具
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'// 載圖
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'// 網路
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    implementation 'com.bignerdranch.android:simple-item-decoration:1.0.0'// 列表divider
+    implementation "android.arch.persistence.room:runtime:$roomVersion"// database
+    annotationProcessor "android.arch.persistence.room:compiler:$roomVersion"// database
+    implementation 'com.github.AndroidDeveloperLB:AutoFitTextView:4'// 自動縮放文字
+//    implementation 'cn.pedant.sweetalert:library:1.3'// ProgressDialog
+
+    implementation project(':library')
+    implementation('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+        transitive = true
+    }
+}

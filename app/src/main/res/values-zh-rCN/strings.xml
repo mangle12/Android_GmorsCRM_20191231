@@ -1,0 +1,1003 @@
+<resources>
+    <string name="empty_show">-</string>
+    <string name="progress_msg">处理中…</string>
+    <string name="logout">注销</string>
+    <string name="close">关闭</string>
+    <string name="previous">上一步</string>
+    <string name="next">下一步</string>
+    <string name="clear">清除</string>
+    <string name="account">使用者账号</string>
+    <string name="password">密码</string>
+    <string name="account_remember">记住账号</string>
+    <string name="login">登入</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="complete">完成</string>
+    <string name="edit">编辑</string>
+    <string name="back">返回</string>
+    <string name="remain">剩余</string>
+    <string name="goto_setting">前往设定页</string>
+    <string name="time">时间</string>
+    <string name="today">今天</string>
+    <string name="more">更多</string>
+    <string name="sign_in">签到</string>
+    <string name="sign_out">签退</string>
+    <string name="customer">公司</string>
+    <string name="person">个人</string>
+    <string name="use_wechat">使用wechat</string>
+    <string name="item">项目</string>
+    <string name="assistant">销售助理</string>
+    <string name="change">更改</string>
+    <string name="online_resource">在线资源</string>
+    <string name="money_unit">元</string>
+    <string name="order_unit">张</string>
+    <string name="people_unit">人</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="this_week">本周</string>
+    <string name="this_month">本月</string>
+    <string name="last_month">上月</string>
+    <string name="week_unit">周别</string>
+    <string name="month_unit">月份</string>
+    <string name="season_unit">季别</string>
+    <string name="season1">第1季</string>
+    <string name="season2">第2季</string>
+    <string name="season3">第3季</string>
+    <string name="season4">第4季</string>
+    <string name="unit">个</string>
+    <string name="go_to">查看</string>
+    <string name="reason">原因</string>
+    <string name="complete_time">完成时间</string>
+    <string name="estimate_amount">预估金额</string>
+    <string name="other_worker">其他相关业务</string>
+    <string name="relative_photo">关联照片</string>
+    <string name="photo">照片</string>
+    <string name="report">工作报告</string>
+    <string name="note">备注</string>
+    <string name="other_info">其他相关说明</string>
+    <string name="profile">个人经历</string>
+    <string name="other">其他</string>
+    <string name="local_time">当地时间</string>
+    <string name="relative_doc">相关文件</string>
+    <string name="send">传送</string>
+    <string name="all">共</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="start">开始</string>
+    <string name="end">结束</string>
+    <string name="no_select">尚未选择</string>
+    <string name="select_customer">选择客户</string>
+    <string name="select_project">选择工作项目</string>
+    <string name="msg_add_project">该客户尚无工作项目，是否前往新增工作项目?</string>
+    <string name="add_product">新增产品</string>
+    <string name="name_card">名片</string>
+    <string name="name_card_photo">名片\n拍照</string>
+    <string name="head_photo">头像\n拍照</string>
+    <string name="name">名字</string>
+    <string name="last_name">姓氏</string>
+    <string name="division">所属部门</string>
+    <string name="job_title">职称</string>
+    <string name="all_day">整日</string>
+    <string name="select_photo_title">选择图片来源</string>
+    <string name="demand_unit">单位名称</string>
+    <string name="remove">移除</string>
+    <string name="remove_confirm">是否确认移除</string>
+    <string name="join_confirm">是否参加？</string>
+    <string name="scheduled_invite">邀请行程</string>
+    <string name="scheduled_trip">预定行程</string>
+    <string name="scheduled_task">预定任务</string>
+    <string name="no_sign_in">未签到</string>
+    <string name="no_sign_out">未签退</string>
+    <string name="unread_msg">则最新</string>
+    <string name="trip">行程</string>
+    <string name="agree">同意</string>
+    <string name="disagree">不同意</string>
+    <string name="resend">重新申请</string>
+    <string name="select_all">全选</string>
+    <string name="select_all_cancel">取消全选</string>
+    <string name="department">部门</string>
+    <string name="all_type">所有类型</string>
+    <string name="all_department">所有部门</string>
+    <string name="all_company">所有通路</string>
+    <string name="contract_all_amount">合同总金额</string>
+    <string name="quotation_count">报价总数</string>
+    <string name="invoice_amount">出货开票金额</string>
+    <string name="sample_count">样品总数</string>
+    <string name="all_people">全部人员</string>
+    <string name="address">地址</string>
+    <string name="selected">已选取</string>
+    <string name="not_selected">未选取</string>
+    <string name="builder">建立人</string>
+    <string name="filter">筛选</string>
+    <string name="from">来自</string>
+    <string name="discount">折扣</string>
+    <string name="batch_submit">批次提交</string>
+    <string name="space">(空白)</string>
+
+    <!-- 请假-->
+    <string name="absent_reason">请假原因</string>
+    <string name="absent_people">请假人</string>
+    <!-- 出差-->
+    <string name="travel_name">出差名称</string>
+    <string name="travel_info">拜访人员信息</string>
+    <string name="travel_reason">拜访目的</string>
+    <string name="travel_support">所需支持</string>
+    <string name="travel_customer_background">客户背景信息</string>
+    <string name="travel_customer_tech">客户技术信息</string>
+    <string name="travel_participant">建议同行人</string>
+    <!-- 快递-->
+    <string name="express_name">快递名称</string>
+    <string name="express_type">有无金额样品</string>
+    <string name="express_contract">合同号</string>
+    <string name="express_model">快递品号＆数量</string>
+    <string name="express_amount">产品金额</string>
+    <string name="express_expense">快递费用(RMB)</string>
+    <string name="express_destination">快递目的地</string>
+    <string name="express_reason">申请理由</string>
+    <string name="express_type_free">免费样品</string>
+    <string name="express_type_value">有金额样品</string>
+    <string name="express_origin">产地</string>
+    <string name="express_arrival_payment">运费是否到付</string>
+    <string name="express_repayment_date">预计回款日期</string>
+    <!-- 特批发货-->
+    <string name="special_ship_code">出货单号</string>
+    <string name="special_ship_amount">出货金额</string>
+    <string name="special_ship_not_bill_amount">已出货未开票金额</string>
+    <string name="special_ship_not_expire_amount">已开票未到期金额</string>
+    <string name="special_ship_expire_day">最近到期天数</string>
+    <string name="special_ship_expire_amount">逾期总金额</string>
+    <string name="special_ship_biggest_expire_day">最长逾期天数</string>
+    <string name="special_ship_prepayment">预付款金额</string>
+    <string name="special_ship_credit">获批信用额度</string>
+    <string name="special_ship_credit_risk">信贷风险总额</string>
+    <string name="special_ship_less_than_500">是否小于500元</string>
+    <string name="special_ship_repayment_date">预计回款日期</string>
+    <string name="special_ship_ship_again">预计回款日期前是否再次发货</string>
+    <string name="special_ship_total">合计</string>
+    <string name="special_ship_exceed_quota">超额度</string>
+    <!-- 回款-->
+    <string name="repayment_date">回款日期</string>
+    <string name="repayment_amount">回款金额</string>
+    <string name="repayment_type">回款类型</string>
+    <string name="repayment_type_transfer">电汇</string>
+    <string name="repayment_type_bill">汇票</string>
+    <!-- 弹簧蓄能圈询价-->
+    <string name="spring_ring_inquiry_name">弹簧蓄能圈询价名称</string>
+    <string name="spring_ring_inquiry_code">询价单号</string>
+    <string name="spring_ring_inquiry_project_name">英文简称+项目名称</string>
+    <string name="spring_ring_inquiry_potential">全年潜在销售额</string>
+    <string name="spring_ring_inquiry_need_image">是否需要应用部出图</string>
+    <string name="spring_ring_inquiry_apply">应用及位置</string>
+    <string name="spring_ring_inquiry_product_type">产品类型</string>
+    <string name="spring_ring_inquiry_competitive_status">竞争状态</string>
+    <string name="spring_ring_inquiry_sgb_advantage">SGB优势</string>
+    <string name="spring_ring_inquiry_sgb_disadvantage">SGB劣势</string>
+    <string name="spring_ring_inquiry_trend">趋势</string>
+    <string name="spring_ring_inquiry_need_parity">是否需要比价</string>
+    <string name="spring_ring_inquiry_sealed_state">密封状态</string>
+    <string name="spring_ring_inquiry_speed">运动速度M/S或转/分</string>
+    <string name="spring_ring_inquiry_pressure">工作压力区间</string>
+    <string name="spring_ring_inquiry_temperature">工作温度区间</string>
+    <string name="spring_ring_inquiry_lifetime">寿命要求</string>
+    <string name="spring_ring_inquiry_other">其他(轴孔不对中、轴跳、安装方式等)</string>
+    <string name="spring_ring_inquiry_static_material">静态表面A材质</string>
+    <string name="spring_ring_inquiry_static_hardness">静态表面A硬度</string>
+    <string name="spring_ring_inquiry_static_smoothness">静态表面A表面处理及光洁度</string>
+    <string name="spring_ring_inquiry_dynamic_material">动态表面B材质</string>
+    <string name="spring_ring_inquiry_dynamic_hardness">动态表面B硬度</string>
+    <string name="spring_ring_inquiry_dynamic_smoothness">动态表面B表面处理及光洁度</string>
+    <string name="spring_ring_inquiry_product_part">零件号或图号</string>
+    <string name="spring_ring_inquiry_product_equipment">设备或者应用名称（如果是泵阀请具体写明是哪种泵阀）</string>
+    <string name="spring_ring_inquiry_product_back_pressure">是否有背压</string>
+    <string name="spring_ring_inquiry_product_medium">介质及冲程</string>
+    <string name="spring_ring_inquiry_product_sealed_type">密封沟槽类型</string>
+    <string name="spring_ring_inquiry_product_product_type">产品类型(如530等)</string>
+    <string name="spring_ring_inquiry_product_groove_diameter">沟槽内径</string>
+    <string name="spring_ring_inquiry_product_groove_outer_diameter">沟槽外径</string>
+    <string name="spring_ring_inquiry_product_groove_width">沟槽宽度</string>
+    <string name="spring_ring_inquiry_product_material">材质编号(如A0205)</string>
+    <string name="spring_ring_inquiry_product_count">@string/inquiry_count</string>
+    <string name="spring_ring_inquiry_product_date">交期</string>
+    <string name="spring_ring_inquiry_product_other">其他说明(如阀杆、阀座)</string>
+    <string name="spring_ring_inquiry_product_remark">备注(特殊要求，如出图)</string>
+    <!-- 非标询价-->
+    <string name="non_standard_inquiry_name">非标询价名称</string>
+    <string name="non_standard_inquiry_code">询价单号</string>
+    <string name="non_standard_inquiry_office">销售组织</string>
+    <string name="non_standard_inquiry_need_parity">是否需要比价</string>
+    <string name="non_standard_inquiry_note">特殊需求</string>
+    <string name="non_standard_inquiry_product_name">产品名称(小类)</string>
+    <string name="product_code">产品编号</string>
+    <string name="inquiry_count">产品数量</string>
+    <string name="size">产品尺寸</string>
+    <string name="tolerance">公差要求</string>
+    <string name="non_standard_inquiry_product_material">材料</string>
+    <string name="hardness">硬度(SHORE or IRHD)</string>
+    <string name="color">颜色</string>
+    <string name="certification">认证要求</string>
+    <string name="wrapping">包装要求</string>
+    <string name="reference_number">参考图号</string>
+    <string name="medium">介质</string>
+    <string name="temperature">温度</string>
+    <string name="pressure">压力</string>
+    <string name="non_standard_inquiry_product_status">动态/静态</string>
+    <string name="line_speed">线速度</string>
+    <string name="year_count">年用量</string>
+    <!-- 量产-->
+    <string name="production_name">新项目量产名称</string>
+    <string name="production_year_amount">项目潜力(年销售额)</string>
+    <string name="production_model">首次批产品号</string>
+    <string name="production_date">首次批日期</string>
+    <string name="production_amount">首次批金额</string>
+    <string name="production_psw">PSW是否签回(汽车行业)</string>
+    <!-- 特价-->
+    <string name="special_price_name">特价名称</string>
+    <string name="special_price_reason">申请理由</string>
+    <string name="special_price_status">项目状态</string>
+    <string name="special_price_type">特价类型</string>
+    <string name="special_price_year_amount">项目预计年采购金额</string>
+    <string name="special_price_year_discount">项目年用量平均折扣</string>
+    <string name="special_price_offer">特价产品OFFER编号</string>
+    <string name="special_price_approval">审批级数</string>
+    <string name="special_price_project_status_sample">试样</string>
+    <string name="special_price_project_status_small">小批量</string>
+    <string name="special_price_project_status_big">量产</string>
+    <string name="special_price_type_single">单次</string>
+    <string name="special_price_type_frequent">长期</string>
+    <string name="special_price_approval_1">一级审批</string>
+    <string name="special_price_approval_2">二级审批</string>
+    <string name="special_price_approval_3">三级审批</string>
+    <string name="special_price_amount">销售单价</string>
+    <string name="competitor_amount">竞争对手参考价格</string>
+    <string name="special_price_description">产品型号/材质/规格及说明</string>
+    <!-- 报价-->
+    <string name="quotation_period">有效期间</string>
+    <string name="quotation_item">产品项目</string>
+    <string name="payment_method">付款方式</string>
+    <string name="quotation_amount">报价总额</string>
+    <string name="unit_keep">单价保留位数</string>
+    <string name="product_category">产品大类</string>
+    <string name="product_report">所需报告</string>
+    <string name="product_model">产品品号</string>
+    <string name="product_description">产品描述</string>
+    <string name="product_discount">产品折扣</string>
+    <string name="product_count">产品数量</string>
+    <string name="product_amount">产品单价</string>
+    <string name="product_non_standard">非标询价单号</string>
+    <string name="product_offer">OFFER号</string>
+    <string name="quotation_name">报价名称</string>
+    <string name="quotation_to_contract">将报价转为合同</string>
+    <string name="tax_include">含税</string>
+    <string name="tax_type_none">不含税</string>
+    <string name="tax_rate">含税16%</string>
+    <!-- 合同-->
+    <string name="contract_name">合同名称</string>
+    <string name="contract_amount">合同总额</string>
+    <string name="contract">合同</string>
+    <string name="contract_count">合同总数</string>
+    <string name="receiver">收货人</string>
+    <string name="delivery_date">要求交货日</string>
+    <!-- 客户资料 -->
+    <string name="important_customer">重点客户</string>
+    <string name="basic_info">基本数据</string>
+    <string name="principal">负责人</string>
+    <string name="phone">电话</string>
+    <string name="email">电子邮件</string>
+    <string name="uniform_id">统一编号</string>
+    <string name="website">公司网站或网址</string>
+    <string name="contact">联络人</string>
+    <string name="industry">行业别</string>
+    <string name="group">隶属企业</string>
+    <string name="customer_team">客户组</string>
+    <string name="customer_source">客户来源</string>
+    <string name="customer_type">客户分类</string>
+    <string name="customer_level">客户级别</string>
+    <string name="customer_info">客户信息</string>
+    <string name="product">产品</string>
+    <string name="customer_show_name">公司简称</string>
+    <string name="customer_name">公司名称</string>
+    <string name="customer_name_chinese">公司名称(中文)</string>
+    <string name="customer_name_english">公司名称(英文)</string>
+    <string name="title_delete_name_card">删除名片</string>
+    <string name="msg_delete_name_card">确定要删除该名片</string>
+    <string name="not_activated">未开通</string>
+    <!-- 提示 -->
+    <string name="alert_msg1">将在</string>
+    <string name="alert_msg2">开始,剩余</string>
+    <string name="unit_day">天</string>
+    <string name="unit_hour">小时</string>
+    <string name="unit_minute">分</string>
+    <string name="alert">提示</string>
+    <string name="alert_no">不提示</string>
+    <string name="alert_current">行程发生前提醒</string>
+    <string name="alert_5M">5分钟前提醒</string>
+    <string name="alert_15M">15分钟前提醒</string>
+    <string name="alert_30M">30分钟前提醒</string>
+    <string name="alert_1H">1小时前提醒</string>
+    <string name="alert_2H">2小时前提醒</string>
+    <string name="alert_1D">1天前提醒</string>
+    <string name="alert_2D">2天前提醒</string>
+    <string name="alert_1W">1周前提醒</string>
+    <!-- hint -->
+    <string name="hint_note">(选填)</string>
+    <string name="hint_absent">请说明请假事由</string>
+    <string name="hint_input_text">点击输入文字</string>
+    <string name="hint_required">*(必填)</string>
+    <string name="hint_not_required">(选填)</string>
+    <string name="hint_address">(不含国家城市)</string>
+    <string name="hint_email">请输入Email</string>
+    <string name="hint_invoice_number">请输入统一编号/Tax ID</string>
+    <string name="hint_phone_type">*请选择类别标签(必填)</string>
+    <string name="hint_phone_type_add">新增自定义标签</string>
+    <string name="hint_phone_number">*请输入电话号码(必填)</string>
+    <string name="hint_phone_extension">请输入分机</string>
+    <string name="hint_country">国家或地区</string>
+    <string name="hint_city">城市</string>
+    <string name="hint_contract_amount">请填写合同金额</string>
+    <string name="hint_approval">审批意见</string>
+    <string name="hint_profile">请输入个人经历</string>
+    <string name="hint_password_old">请输入原密码</string>
+    <string name="hint_password_new">请输入新密码</string>
+    <string name="hint_password_confirm">请再次输入新密码</string>
+    <string name="hint_product">客户产品(产业别)</string>
+    <string name="hint_sale_search">请输入客户名或项目名</string>
+    <string name="hint_purchase_input">采购输入字段</string>
+    <!-- 样品 -->
+    <string name="sample">样品</string>
+    <string name="sample_detail">样品详细资料</string>
+    <string name="sample_price">样品单总面价金额</string>
+    <string name="sample_reason">送样理由</string>
+    <string name="sample_source">样品来源</string>
+    <string name="sample_import">进口方式</string>
+    <string name="sample_delivery">国内运输</string>
+    <string name="sample_intro">简述</string>
+    <string name="sample_intro_example">(例：行业地位、年用量、市场份额、总金额等信息) *必填</string>
+    <string name="sample_test_period">测试周期</string>
+    <string name="sample_test_basis">测试评估依据</string>
+    <string name="sample_other_intro">其他详述</string>
+    <string name="sample_receiver">收货人</string>
+    <string name="sample_receiver_address">收货人地址</string>
+    <string name="sample_receiver_phone">收货人电话</string>
+    <string name="sample_test_start_time">测试开始时间</string>
+    <string name="sample_delivery_time">要求发货时间</string>
+    <string name="sample_name">送样名称</string>
+    <string name="sample_item_category">样品大类</string>
+    <string name="sample_item_type">样品种类</string>
+    <string name="sample_item_report">所需报告</string>
+    <string name="sample_item_company_stock">我司库存</string>
+    <string name="sample_item_provider_stock">供货商库存</string>
+    <string name="sample_item_count">申请数量</string>
+    <string name="sample_item_year_count">年用量</string>
+    <string name="sample_item_code">@string/product_code</string>
+    <string name="sample_item_other">其他</string>
+    <string name="sample_item_other_example">(例:包装要求、交期要求、Offer号等)</string>
+    <string name="sample_item_price">送样单价</string>
+    <string name="sample_item_total">总计</string>
+    <!-- work detail -->
+    <string name="conversation">消息讨论</string>
+    <string name="check_in_out">签到与签退</string>
+    <string name="week_report">本周报告</string>
+    <string name="participant">参与人</string>
+    <string name="related_worker">关联业务</string>
+    <string name="reviewer">审阅人</string>
+    <string name="place">地点</string>
+    <string name="reply">回复</string>
+    <string name="cancel_task">取消</string>
+    <string name="delay_task">改时</string>
+    <string name="restart_task">重启</string>
+    <string name="cancel_reason">取消原因</string>
+    <string name="msg_cancel_reason">请选择或说明取消原因</string>
+    <string name="explain_reason">说明原因</string>
+    <string name="delay_reason">改时原因</string>
+    <string name="msg_delay_reason">请选择或说明改时事由</string>
+    <string name="next_start_time">下次开始时间</string>
+    <string name="next_end_time">下次结束时间</string>
+    <string name="visit_name">活动名称</string>
+    <string name="office_name">内勤名称</string>
+    <string name="task_name">任务名称</string>
+    <string name="visit_type">活动类型</string>
+    <string name="visit_normal">外出拜访</string>
+    <string name="visit_phone">电话拜访</string>
+    <string name="visit_email">邮件</string>
+    <string name="visit_fast">快速纪录</string>
+    <string name="report_updated_at">最后更新</string>
+    <string name="not_submitted">待提交</string>
+    <string name="submitted">已提交</string>
+    <string name="submit">提交</string>
+    <string name="all_not_submitted">未提交项目</string>
+    <!-- 任务状态 -->
+    <string name="completed">已完成</string>
+    <string name="not_start">未开始</string>
+    <string name="uncompleted">未完成</string>
+    <string name="canceled">已取消</string>
+    <string name="delayed">已改时</string>
+    <!-- 参与状态 -->
+    <string name="accept_none">未选</string>
+    <string name="accept_no">不参加</string>
+    <string name="accept_maybe">可能</string>
+    <string name="accept_yes">参加</string>
+    <!-- 签到状态 -->
+    <string name="sign_none">未签到</string>
+    <string name="sign_in_done">已签到</string>
+    <string name="sign_out_done">已签退</string>
+    <!-- 工作项目 -->
+    <string name="project">工作项目</string>
+    <string name="project_name">工作项目名称</string>
+    <string name="create_time">建立时间</string>
+    <string name="request_unit">单位名称</string>
+    <string name="contact_window">联络窗口</string>
+    <string name="in_charge">负责主管</string>
+    <string name="check_date">结单日期</string>
+    <!-- 消息 -->
+    <string name="news_notify">通知</string>
+    <string name="news_mission">工作邀请</string>
+    <string name="news_announce">公告</string>
+    <string name="news_resource">销售资源</string>
+    <string name="editor">发文者</string>
+    <!-- 工作 -->
+    <string name="work">工作</string>
+    <string name="work_visit">活动</string>
+    <string name="work_office">内勤</string>
+    <string name="work_task">任务</string>
+    <string name="work_absent">请假</string>
+    <string name="work_test">測試</string>
+    <!-- 申请 -->
+    <string name="apply">申请</string>
+    <string name="apply_quotation">报价</string>
+    <string name="apply_contract">合同</string>
+    <string name="apply_reimbursement">报销单</string>
+    <string name="apply_sample">送样</string>
+    <string name="apply_special_price">特价</string>
+    <string name="apply_production">新项目量产</string>
+    <string name="apply_non_standard_inquiry">非标询价</string>
+    <string name="apply_spring_ring_inquiry">弹簧蓄能圈</string>
+    <string name="apply_special_ship">特批发货</string>
+    <string name="apply_repayment">回款信息</string>
+    <string name="apply_express">快递</string>
+    <string name="apply_travel">出差</string>
+    <!-- 审批 -->
+    <string name="approval">审批</string>
+    <string name="approved">已审批</string>
+    <string name="approval_status_unsign">未审批</string>
+    <string name="approval_status_agree">已通过</string>
+    <string name="approval_status_disagree">未通过</string>
+    <string name="approval_status_process">审批中</string>
+    <string name="approval_resend">重送中</string>
+    <string name="approver_unit">个审批者</string>
+    <string name="approver">审批人</string>
+    <string name="approval_msg">请填写审批意见(选填)</string>
+    <string name="approval_reason">审批意见</string>
+    <string name="approval_require_unknown">未知</string>
+    <string name="approval_require_need">需要</string>
+    <string name="approval_require_not_need">不需要</string>
+    <string name="approval_status">审批状态</string>
+    <string name="approval_require">是否需要审批</string>
+    <string name="default_approver">默认审批人</string>
+    <string name="change_to_default">回复默认</string>
+    <string name="approval_stage">级审批</string>
+    <string name="approval_description">审批备注</string>
+    <!-- 报销 -->
+    <string name="exp">报销</string>
+    <string name="exp_document">报销单</string>
+    <string name="exp_worker">同行业务</string>
+    <string name="select_exp_target">选择扣除对象</string>
+    <string name="exp_target">扣除对象</string>
+    <string name="exp_item">报销项目</string>
+    <string name="exp_detail">报销明细</string>
+    <string name="exp_name">报销名称</string>
+    <string name="exp_add">增加报销项目</string>
+    <string name="exp_total">报销总额</string>
+    <string name="exp_receipt">支付收据</string>
+    <string name="exp_available">可报销定额</string>
+    <string name="currency_used">货币使用</string>
+    <string name="exp_amount">单价金额</string>
+    <string name="exp_amount_limit">(上限：%d)</string>
+    <string name="exp_time">费用发生日期</string>
+    <string name="exp_user">报销人</string>
+    <string name="exp_count1">共计</string>
+    <string name="exp_count2">笔报销项目</string>
+    <string name="reimbursement_approval_1">一级审批</string>
+    <string name="reimbursement_approval_2">二级审批</string>
+    <!-- 下载状态 -->
+    <string name="download_failed">下载失败</string>
+    <string name="download_paused">下载暂停</string>
+    <string name="download_pending">等待下载</string>
+    <string name="download_running">下载中</string>
+    <string name="download_success">已下载</string>
+    <!-- appbar -->
+    <string name="appbar_search_hint">请输入关键词搜寻</string>
+    <!-- search result -->
+    <string name="error_search_empty">搜寻关键词不得为空字符串</string>
+    <!-- 销售机会 -->
+    <string name="sales_stage">销售阶段</string>
+    <string name="other_element">其他要素</string>
+    <string name="sales_type">机会类型</string>
+    <string name="sales_source">机会来源</string>
+    <string name="decision_element">决策要素</string>
+    <string name="hint_decision_element">请简述决策要素</string>
+    <string name="lose_reason">输单原因</string>
+    <string name="win_reason">赢单原因</string>
+    <string name="reason_description">原因描述</string>
+    <string name="win">赢单</string>
+    <string name="lose">输单</string>
+    <string name="change_to">修改至</string>
+    <!-- project history -->
+    <string name="new_history">新历程</string>
+    <string name="new_sales">新销售机会</string>
+    <string name="sales_percentage">赢率</string>
+    <string name="history">历程</string>
+    <!-- week -->
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="sunday">日</string>
+    <!-- week report -->
+    <string name="total_type_performance">业绩</string>
+    <string name="total_type_behavior">行为</string>
+    <string name="total_type_add">新增</string>
+    <string name="customer_list">客户列表</string>
+    <string name="task_unit">项工作</string>
+    <string name="msg_no_task">目前未预定工作</string>
+    <string name="report_win_amount">赢单金额</string>
+    <string name="report_contract_amount">合同金额</string>
+    <string name="report_lose">@string/lose</string>
+    <string name="report_sign_in">活动签到</string>
+    <string name="report_sign_out">活动签退</string>
+    <string name="report_new_task">@string/main_menu_new_mission</string>
+    <string name="report_new_opportunity">新建销售机会</string>
+    <!-- month report -->
+    <string name="month_report">月报告</string>
+    <string name="current_month_report">本月报告</string>
+    <string name="month_work_summary">本月工作汇总</string>
+    <string name="hint_month_report">请输入报告内容</string>
+    <string name="current_month_customer">本月总结-新客户开发</string>
+    <string name="current_month_project">本月总结-新项目跟进</string>
+    <string name="current_month_question">本月总结-问题</string>
+    <string name="next_month_plan">下月计划</string>
+    <string name="next_month_visit_plan">下月计划-活动计划</string>
+    <string name="next_month_sales_goal">下月计划-销售工作目标</string>
+    <string name="next_month_guide">下月计划-需要的指导</string>
+    <string name="month_report_sale_goal">销售额目标达标率</string>
+    <string name="month_report_current_goal">当月目标达成情况</string>
+    <string name="month_report_important_situation">重点行业动态，重点项目或销售机会状态变化情况</string>
+    <string name="month_report_potential_market">潜在目标市场</string>
+    <string name="month_report_compete_strategy">竞争与产品策略建议</string>
+    <string name="month_report_resource_investment">资源投入准备与建议，须协调支持情况</string>
+    <string name="month_report_submit_msg">是否确认提交（提交后将无法再修改该月份月报）</string>
+    <!-- 主选单项目 -->
+    <string name="main_menu_new_task">新建工作</string>
+    <string name="main_menu_report">工作报告</string>
+    <string name="main_menu_customer">客户</string>
+    <string name="main_menu_approval_record">审批申请明细</string>
+    <string name="main_menu_approval_sign">审批执行</string>
+    <string name="main_menu_sample">样品检视</string>
+    <string name="main_menu_exp_record">报销记录</string>
+    <string name="main_menu_sales">@string/sale_opportunity</string>
+    <string name="main_menu_statistic">统计报表</string>
+    <string name="main_menu_personal">@string/person</string>
+    <string name="main_menu_setting">设定</string>
+    <string name="main_menu_new_customer">新建客户</string>
+    <string name="main_menu_new_contact_person">新建客户联络人</string>
+    <string name="main_menu_new_exp">新建报销单</string>
+    <string name="main_menu_new_mission">新建任务</string>
+    <!-- 统计图表项目 -->
+    <string name="statistic_menu_target">个人目标完成率</string>
+    <string name="statistic_menu_visit">业务外出活动排行</string>
+    <string name="statistic_menu_performance">业务员销售业绩</string>
+    <string name="statistic_menu_sign">预估签约商机排行</string>
+    <string name="statistic_menu_win">销售机会赢单</string>
+    <string name="statistic_menu_sale">@string/sale_opportunity</string>
+    <string name="goal">目标</string>
+    <string name="current">当前</string>
+    <string name="last_period">前期</string>
+    <string name="goal_amount">目标金额</string>
+    <string name="reach_amount">达成金额</string>
+    <string name="compare_last_month">前期相比</string>
+    <string name="first_time_order">初步接洽单数</string>
+    <string name="confirm_order">确定单数</string>
+    <string name="team_rank">同组业务排名</string>
+    <string name="company_rank">公司整体排名</string>
+    <string name="rank_detail">排行细节</string>
+    <string name="visit_count">活动次数</string>
+    <string name="last_visit">最近一次活动</string>
+    <string name="last_item">最近一笔：</string>
+    <string name="target">对象</string>
+    <string name="current_sale">本月销售业绩</string>
+    <string name="all_sale">全部销售业绩</string>
+    <string name="sale_opportunity">销售机会</string>
+    <string name="current_sale_opportunity">销售阶段</string>
+    <string name="material">材质别</string>
+    <string name="current_amount">本月金额</string>
+    <string name="total_amount">总金额</string>
+    <string name="filter_time">时间范围</string>
+    <string name="filter_personal">按个人查看范围</string>
+    <string name="filter_department">按部门查看范围</string>
+    <string name="filter_company">按通路查看范围</string>
+    <string name="filter_check_point">考核指标</string>
+    <string name="filter_check_time">考核时间</string>
+    <string name="filter_industry">客户行业</string>
+    <string name="filter_product">按产品查看范围</string>
+    <string name="filter_top_count">排行数量</string>
+    <string name="condition">条件</string>
+    <string name="asc">升幂排序</string>
+    <string name="desc">降序排序</string>
+    <string name="sort_by_amount">按金额排序</string>
+    <string name="sort_by_time">按时间排序</string>
+    <!-- CustomerDetailActivity -->
+    <string name="tab_record">组员记录</string>
+    <string name="tab_item">@string/project</string>
+    <!-- 主选单设定 -->
+    <string name="fixed_item">固定项目</string>
+    <string name="added_item">已加入项目</string>
+    <string name="not_add_item">未加入项目</string>
+    <!-- 项目进行状态 -->
+    <string name="project_status_all">全部项目</string>
+    <string name="project_status_start">项目开始</string>
+    <string name="project_status_design">设计选型</string>
+    <string name="project_status_quote">提交报价</string>
+    <string name="project_status_sample">送样测试</string>
+    <string name="project_status_negotiation">商务谈判</string>
+    <string name="project_status_win">@string/win</string>
+    <string name="project_status_lose">@string/lose</string>
+    <string name="project_status_win_lose">赢/输单</string>
+
+    <string name="project_status">阶段</string>
+    <string name="project_status_1">阶段1</string>
+    <string name="project_status_2">阶段2</string>
+    <string name="project_status_3">阶段3</string>
+    <string name="project_status_4">阶段4</string>
+
+    <!-- 报销项目 -->
+    <string name="exp_stay">住宿费</string>
+    <string name="exp_traffic">交通费</string>
+    <string name="exp_eat">餐费</string>
+    <string name="exp_gift">礼品</string>
+    <string name="exp_phone">手机及通信费</string>
+    <string name="exp_private">私车公用贴补费用</string>
+    <string name="exp_merge">合并报销</string>
+    <string name="exp_extra">额外报销</string>
+    <string name="exp_other">其他</string>
+    <string name="exp_together">同行人</string>
+
+    <!-- msg -->
+    <string name="msg_input_empty">请输入所需信息</string>
+    <string name="msg_permission_denied">无法取得所需权限，将跳返上页</string>
+    <string name="msg_permission_denied_forever">无法取得所需权限，请前往设定页开启权限</string>
+    <!-- 样品排序 -->
+    <string name="sample_sort_all">全部</string>
+    <string name="sample_sort_date">依日期</string>
+    <string name="sample_sort_company">依公司</string>
+    <string name="sample_sort_type">依类型</string>
+    <!-- 客户排序 -->
+    <string name="customer_sort_important">@string/important_customer</string>
+    <string name="customer_sort_area">地区排序</string>
+    <string name="customer_sort_time">建立排序</string>
+    <!-- 设定 -->
+    <string name="setting_color">更改主题色系</string>
+    <string name="setting_about">关于CRM</string>
+    <string name="setting_lock">设定手势</string>
+    <string name="setting_lock_change">修改手势</string>
+    <string name="setting_lock_enable">手势密码锁</string>
+    <string name="setting_password_change">修改密码</string>
+    <string name="setting_guide">使用教学</string>
+    <!-- 报销单扣除种类 -->
+    <string name="reimbursement_type_self">个人</string>
+    <string name="reimbursement_type_department">@string/department</string>
+    <string name="reimbursement_type_customer">客户</string>
+    <!-- 电话类型 -->
+    <string name="phone_type">电话类型</string>
+    <string name="phone_type_home">住家</string>
+    <string name="phone_type_company">公司</string>
+    <string name="phone_type_mobile">移动电话</string>
+    <string name="phone_type_primary">主要</string>
+    <string name="phone_type_home_fax">家用传真</string>
+    <string name="phone_type_company_fax">公司传真</string>
+    <string name="phone_type_other">其他</string>
+    <!-- 请假类型 -->
+    <string name="absent_type">请假类型</string>
+    <string name="absent_type_leave">事假</string>
+    <string name="absent_type_sick">病假</string>
+    <string name="absent_type_dead">丧假</string>
+    <string name="absent_type_marriage">婚假</string>
+    <string name="absent_type_maternity">产假</string>
+    <string name="absent_type_public">公假</string>
+    <string name="absent_type_taking_care">照顾假</string>
+    <string name="absent_type_physiological">生理假</string>
+    <string name="absent_type_birthCheck">产检假</string>
+    <string name="absent_type_paternity">陪产假</string>
+    <string name="absent_type_publicInjury">公伤假</string>
+    <string name="absent_type_special">特休假</string>
+    <string name="absent_type_unpaid">无薪给假</string>
+    <!-- title -->
+    <string name="title_activity_news">消息</string>
+    <string name="title_activity_schedule">工作排程</string>
+    <string name="title_activity_menu_setting">设置快捷按钮</string>
+    <string name="title_activity_setting">设定</string>
+    <string name="title_activity_create">@string/main_menu_new_task</string>
+    <string name="title_activity_user_list">客户联络人</string>
+    <string name="title_activity_customer_info">客户资料</string>
+    <string name="title_activity_project">@string/project</string>
+    <string name="title_activity_sale">@string/sale_opportunity</string>
+    <string name="title_activity_sale_edit">销售机会</string>
+    <string name="title_activity_work_detail">详细信息</string>
+    <string name="title_activity_conversation">新增消息</string>
+    <string name="title_activity_personal">@string/main_menu_personal</string>
+    <string name="title_activity_week_report">周计划</string>
+    <string name="title_activity_cancel_task">@string/cancel_task</string>
+    <string name="title_activity_delay_task">@string/delay_task</string>
+    <string name="title_activity_statistic">@string/main_menu_statistic</string>
+    <string name="title_activity_statistic_personal">个人目标</string>
+    <string name="title_activity_sign_progress">审批进度</string>
+    <string name="title_activity_exp_record">审批进度</string>
+    <string name="title_activity_contact_create">新建联络人</string>
+    <string name="title_activity_contact_select">新增联络人</string>
+    <string name="title_activity_participant_select">新增参与人</string>
+    <string name="title_activity_project_create">新项目建立</string>
+    <string name="title_activity_customer_create">新增客户</string>
+    <string name="title_activity_customer_edit">编辑客户</string>
+    <string name="title_activity_period_select">自定义时间</string>
+    <string name="title_activity_user_select">选择检视对象</string>
+    <string name="title_activity_location_select">选择国家或地区</string>
+    <string name="title_activity_approver_select">选择审批人</string>
+    <!-- lock -->
+    <string name="locker_msg">请画出手势图形(最少需要4个点)</string>
+    <string name="locker_unlock">请使用图形手势解锁</string>
+    <string name="locker_lock">请设定图形手势上锁</string>
+    <string name="locker_input_again">请再次输入图形锁</string>
+    <string name="lock_setting_success">图形锁设定成功</string>
+    <string name="error_lock_setting_failed">图形锁设定失败，请重新设定</string>
+    <string name="error_lock_least_point">请至少输入4个点</string>
+    <!-- error msg -->
+    <string name="error_msg_empty">目前没有资料</string>
+    <string name="error_msg_no_photo">无关联照片</string>
+    <string name="error_msg_no_approval">该行程不须审批</string>
+    <string name="error_msg_end_time_before_start_time">结束时间不可早于开始时间</string>
+    <string name="error_msg_reimbursement_time_in_future">报销项目时间超过现在时间</string>
+    <string name="error_msg_reimbursement_limit">单价金额超出上限</string>
+    <string name="error_msg_no_app">无可使用的APP</string>
+    <string name="error_msg_no_customer">尚未选择客户</string>
+    <string name="error_msg_no_project">尚未选择工作项目</string>
+    <string name="error_msg_no_location">尚未输入地点信息</string>
+    <string name="error_msg_no_product">尚未建立产品</string>
+    <string name="error_msg_no_target">尚未选择扣款对象</string>
+    <string name="error_msg_no_reimbursement_amount">有尚未输入报销金额的项目</string>
+    <string name="error_msg_no_approval_selected">尚未选择审批项目</string>
+    <string name="error_msg_no_submit_selected">尚未选择提交项目</string>
+    <string name="error_msg_required">未填写 </string>
+    <string name="error_msg_google_play_service_not_available">无法启动google play service</string>
+    <string name="error_msg_unknown">发生未知的错误</string>
+    <string name="error_msg_handle_intent">无可使用的app</string>
+    <string name="error_msg_permission">尚未取得权限</string>
+    <string name="error_msg_input_required">尚有必填项目未输入</string>
+    <string name="error_msg_no_network">此功能为「在线功能」，请确认您的装置是否与因特网联机</string>
+    <string name="error_msg_login">无法登入，请稍后重试</string>
+    <string name="error_msg_password_wrong">密码不正确，请重新输入原密码</string>
+    <string name="error_msg_password_confirm">新密码不一致，请确认新密码后重新输入</string>
+    <string name="error_msg_customer_duplicate">无法新增客户(已有该客户名的客户)</string>
+    <string name="error_msg_gps_sign_in">无法透过GPS签到，请透过拍照进行签到</string>
+    <string name="error_msg_no_camera">该装置无相机功能，无法进行拍照签到</string>
+    <string name="error_msg_no_report">未填写工作报告</string>
+    <string name="error_msg_format">格式错误</string>
+    <string name="error_msg_discount_range">产品折扣范围为0.01~9.99</string>
+    <string name="error_msg_token_expired">请重新登入</string>
+    <string name="error_msg_self_group">不可选择自己为隶属集团</string>
+    <string name="error_msg_customer_not_approval">客户尚未开通</string>
+    <string name="error_msg_sales_opportunity_update">销售机会设定已变更，无法取得上次记录设定</string>
+    <string name="error_msg_sales_opportunity_not_found">数据遗失，无法取得销售机会记录设定</string>
+    <string name="error_msg_code_not_found">尚未取得编号</string>
+    <string name="error_msg_not_sync">数据尚未同步</string>
+    <string name="error_msg_not_get_gps">无法取得GPS位置</string>
+    <string name="error_msg_gps_validation">GPS位置不在验证范围内</string>
+    <string name="error_msg_location_permission">无法取得定位权限</string>
+    <string name="error_msg_opportunity_create_disable">无法再新增销售机会</string>
+    <!-- 取消原因 -->
+    <string-array name="cancel_reason">
+        <item>临时有其他活动</item>
+        <item>被派遣到其他业务作业</item>
+        <item>无法配合时间</item>
+        <item>客户取消行程</item>
+        <item>其他原因</item>
+    </string-array>
+    <!-- 搜寻时间 -->
+    <string-array name="search_time">
+        <item>今天</item>
+        <item>昨天</item>
+        <item>本周</item>
+        <item>本月</item>
+        <item>自定义时间</item>
+    </string-array>
+    <!-- 时间范围 -->
+    <string-array name="filter_time">
+        <item>本月</item>
+        <item>上月</item>
+        <item>本季度</item>
+        <item>上季度</item>
+        <item>本年</item>
+        <item>去年</item>
+        <item>前年</item>
+    </string-array>
+    <!-- 考核指标 -->
+    <string-array name="filter_check_point">
+        <item>总金额(合同)</item>
+        <item>总金额(出货开票)</item>
+    </string-array>
+    <!-- 考核时间 -->
+    <string-array name="filter_check_time">
+        <item>签约日期</item>
+    </string-array>
+    <!-- 货币单位 -->
+    <string-array name="currency">
+        <item>美元</item>
+        <item>人民币</item>
+        <item>新台币</item>
+        <item>日圆</item>
+        <item>英镑</item>
+    </string-array>
+    <!-- 选择图片方式 -->
+    <string-array name="select_photo">
+        <item>拍摄照片</item>
+        <item>选择图片</item>
+    </string-array>
+    <!-- 选择图片方式 -->
+    <string-array name="unit_type">
+        <item>整数</item>
+        <item>一位小数</item>
+        <item>两位小数</item>
+    </string-array>
+    <!-- 有/无 -->
+    <string-array name="have">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+    <!-- 审请快递样品类型 -->
+    <string-array name="express_type">
+        <item>@string/express_type_free</item>
+        <item>@string/express_type_value</item>
+    </string-array>
+    <!-- 教学分类标题 -->
+    <string-array name="guide_category_title">
+        <item>工作</item>
+        <item>客户维系</item>
+        <item>申请/审批</item>
+        <item>其他/设定</item>
+    </string-array>
+    <!-- 教学标题 -->
+    <string-array name="guide_title">
+        <item>新建拜访</item>
+        <item>申请报价</item>
+        <item>提交工作报告</item>
+        <item>报销纪录</item>
+        <item>销售机会</item>
+        <item>统计报表</item>
+        <item>客户</item>
+        <item>客户-新建工作项目</item>
+        <item>客户-查看工作项目</item>
+        <item>客户-建立工作历程</item>
+        <item>客户-查看工作历程</item>
+        <item>客户-新建销售阶段</item>
+        <item>审批申请明细</item>
+        <item>审批执行</item>
+        <item>个人</item>
+        <item>设定-修改用户密码</item>
+        <item>设定-修改手机密码锁</item>
+    </string-array>
+    <string-array name="crm_add_appointment">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[新增工作]按钮</item>
+        <item>点击新建工作选项的[拜访]项目</item>
+        <item>按照步骤，完整填写必填的数据字段，填写完成后点击[完成]建立窗体</item>
+        <item>建立后的工作拜访排程，将会同步显示行事历上，点击进入可看到详细的工作内容</item>
+        <item>进入工作拜访详细信息，卷动画面来显示更多的信息内容</item>
+    </string-array>
+    <string-array name="crm_approval_quote">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[新增工作]按钮</item>
+        <item>点击新建工作选项的[报价]项目</item>
+        <item>按照步骤，完整填写必填的数据字段，填写完成后点击[完成]建立窗体</item>
+        <item>建立后的报价申请，将会同步显示行事历上，点击进入可看到详细的工作内容</item>
+        <item>进入报价详细信息，卷动画面来显示更多的信息内容</item>
+    </string-array>
+    <string-array name="crm_submit_quote">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[工作报告]按钮</item>
+        <item>进入工作报告列表，点击上方撰写月报告></item>
+        <item>1.于月报告详细页最上方可看到本月的工作活动总计表\n2.将画面卷动至下方，并填写必填的报告项目后，点击右上方[完成]按钮，即完成该月的工作报告</item>
+    </string-array>
+    <string-array name="crm_ledger">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[统计报表]按钮</item>
+        <item>点击统计报表中预查看的项目（以销售目标完成情况）为例</item>
+        <item>1.透过销售目标完成情况，可检视自己本月的工作目标与金额是否合乎预期，且可参考上月的销售数据一同比较分析\n2.各统计报表都可使用筛选器来过滤预查询的数据内容</item>
+        <item>使用筛选条件，来缩小或是放大显示数据的范围，设定后点击[完成]，回到统计图表中查看筛选结果</item>
+    </string-array>
+    <string-array name="crm_client">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[客户]按钮</item>
+        <item>1.透过筛选条件:重点客户、地区排序、笔划排序可初步选择客户\n2.点击任意客户，查看更详细的客户相关资料\n3.藉由上下手势卷动画面浏览更多信息</item>
+        <item>1.进入客户详细资料页，左边的选择钮[组员记录]，可浏览其他业务与该客户的工作活动记录\n2.藉由上下手势卷动画面浏览更多资讯</item>
+        <item>1.点击客户资料卡最右侧[更多>]，进入查看该公司详细资讯\n2.进入客户详细资料页，右边的选择钮[工作项目]，可查看该公司目前有多少工作项目正在进行中</item>
+        <item>公司资料卡内可检视该公司基本数据及相关联络人员数据</item>
+    </string-array>
+    <string-array name="crm_client_add_project">
+        <item>进入客户详细数据，点击工作项目中的[+]箭头，开启新工作项目的窗体</item>
+        <item>依序完成新建工作项目的窗体数据内容</item>
+        <item>窗体填写完成后，点击右上角[完成]按钮，即新建完成一个工作项目</item>
+        <item>完成后的工作项目，可在工作项目列表中查看</item>
+    </string-array>
+    <string-array name="crm_client_add_salesstage">
+        <item>进入客户详细资料，点击任意项目中的销售阶段百分比</item>
+        <item>进入销售阶段历程，点击历程最上方[+新销售阶段]</item>
+        <item>进入销售阶段页面，显示的是六大销售阶段，各阶段点击右侧向下箭头，展开列表看到更多其阶段底下待完成进度（以％为单位）</item>
+        <item>1.如业务选择的销售阶段为「弃单」，则必须额外填写其他要素下的窗体属性\n2.完成填写后，点击右上[完成]按钮</item>
+        <item>完成后的销售阶段，可在销售阶段历程中，查看各时间点的销售历程</item>
+    </string-array>
+    <string-array name="crm_client_check_project">
+        <item>进入客户详细数据，点击工作项目中预查看的工作项目</item>
+        <item>1.进入工作详细资料页，藉由手势卷动画面查看更多工作项目内容</item>
+    </string-array>
+    <string-array name="crm_client_add_history">
+        <item>进入客户详细资料，点击任意项目中的[历程]按钮</item>
+        <item>进入销售阶段历程，点击历程最上方[+新历程]</item>
+        <item>新建历程前，需先选择一项预新建的工作（此以拜访为例）</item>
+        <item>按照步骤，完整填写必填的数据字段，填写完成后点击[完成]建立窗体</item>
+        <item>完成后的销售阶段，可在工作历程列表中查看</item>
+    </string-array>
+    <string-array name="crm_client_check_history">
+        <item>进入客户详细资料，点击任意项目中的[历程]按钮</item>
+        <item>于工作项目下方可检视，各工作历程（由时间最近到最早）排序显示，点击任意历程可查看该历程详细信息</item>
+        <item>进入历程后（目前以报价历程来说明），可藉由手势上下卷动画面，看更多信息</item>
+    </string-array>
+    <string-array name="crm_approval_list">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[申请明细]按钮</item>
+        <item>选择预查看的申请明细（此以报价为例）</item>
+        <item>进入申请明细中，首先看到为尚未提交的审批申请，点击信息列上方的[提交]按钮，即可将此份申请提交到上级主管方，执行审批</item>
+        <item>1.确认选取的提交申请后，点击下方[提交送出]，即完成提交的工作</item>
+        <item>送出审批执行后的申请型系，可在列表右上，看到目前审批的状态</item>
+        <item>点击任意申请明细，可查看更详细的信息，并以上下手势卷动画面浏览更多信息</item>
+    </string-array>
+    <string-array name="crm_execution">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[审批执行]按钮</item>
+        <item>进入申请执行页面，点击信息列上的[审批按钮]，执行审批</item>
+        <item>申请项目进行审批时，可选择单笔审批或是多笔审批</item>
+        <item>进入任意审批申请后，透过下方[同意]或[不同意]按钮，执行审批</item>
+        <item>不论审批[同意]或[不同意]，主管皆可在意见字段中填写审批意见，完成后点击[确定]按钮，结束该次审批执行</item>
+    </string-array>
+    <string-array name="crm_reimburse">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[报销记录]按钮</item>
+        <item>选取报销记录列表中，预查看的项目</item>
+        <item>进入报销详细信息，并以上下手势卷动画面浏览更多信息</item>
+    </string-array>
+    <string-array name="crm_salesforce">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[销售机会]按钮</item>
+        <item>进入销售阶段页面，显示的是六大销售阶段，点击阶段列表右侧箭头，可进入查看该阶段更详细的信息内容</item>
+        <item>1.以阶段4为例，展开可以检视，数多属于该销售阶段的工作项目\n2.点击任意工作项目，进入该工作项目列表查看更详细的销售阶段信息（以大立光为例）</item>
+        <item>进入工作项目后，可针对该项目的销售阶段，点击查看详细的销售进度及工作内容</item>
+    </string-array>
+    <string-array name="crm_profile">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[个人]按钮</item>
+        <item>1.个人信息中，可编辑或查看个人资料内容\n2.点击[编辑]按钮，可修改个人资料</item>
+        <item>编辑后的个人资料，点击[完成]自动储存内容</item>
+    </string-array>
+    <string-array name="crm_setting_change_password">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[设定]按钮</item>
+        <item>点击设定中[用户密码]</item>
+        <item>进入变更用户密码页面，输入旧密码及2次新密码确认后，点击上方[完成]按钮即完成密码修改</item>
+    </string-array>
+    <string-array name="crm_setting_gesture_lock">
+        <item>点击首页行事历最下方的[＋]按钮</item>
+        <item>点击菜单中的[设定]按钮</item>
+        <item>点击设定中[设定手势密码锁]</item>
+        <item>于画面中画出4点以上的手势图型</item>
+        <item>再次（确认）画出的手势图型，即完成设定</item>
+        <item>1.完成设定后的手势密码锁，会于画面中看到呈现开启的状态\n2.若要关闭手势密码锁，将开关切换成OFF的状态即可</item>
+    </string-array>
+</resources>

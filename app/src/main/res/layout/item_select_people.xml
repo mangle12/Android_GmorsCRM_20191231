@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:divider="@drawable/divider_white_v"
+              android:orientation="vertical"
+              android:showDividers="middle">
+
+    <Button
+        android:id="@+id/btnContacter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:background="@color/gray_light"
+        android:drawableEnd="@mipmap/common_additem"
+        android:gravity="start|center_vertical"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="@string/contact"/>
+
+    <Button
+        android:id="@+id/btnParticipant"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:background="@color/gray_light"
+        android:drawableEnd="@mipmap/common_additem"
+        android:gravity="start|center_vertical"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="@string/participant"/>
+</LinearLayout>

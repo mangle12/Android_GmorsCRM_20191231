@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <tw.com.masterhand.gmorscrm.view.Appbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_white_h"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/button_sort_important"
+                style="@style/TabButton"
+                android:text="@string/customer_sort_important"/>
+
+            <Button
+                android:id="@+id/button_sort_area"
+                style="@style/TabButton"
+                android:text="@string/customer_sort_area"/>
+
+            <Button
+                android:id="@+id/button_sort_word"
+                style="@style/TabButton"
+                android:text="@string/customer_sort_time"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="8dp"
+        android:visibility="gone"
+        android:paddingStart="8dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/containerArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lockview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_dark"
+    tools:context="tw.com.masterhand.gmorscrm.activity.setting.LockSettingActivity">
+
+    <tw.com.masterhand.gmorscrm.view.MaterialLockView
+        android:id="@+id/pattern"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        lockview:CORRECT_COLOR="@color/colorPrimary"
+        lockview:LOCK_COLOR="@color/white"
+        lockview:WRONG_COLOR="@color/red"/>
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pattern"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="16dp"
+        android:drawableTop="@mipmap/common_icon_locker"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="@string/locker_msg"
+        android:textColor="@color/white"/>
+</RelativeLayout>

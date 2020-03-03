@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="tw.com.masterhand.gmorscrm">
+
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--小米推送權限-->
+    <permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <permission
+        android:name="${applicationId}.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="${applicationId}.permission.MIPUSH_RECEIVE" />
+    <!--小米推送權限-->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon,android:allowBackup">
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f952c9421830d0266b08b34fa194ebf58dc3866b" />
+
+        <service android:name="tw.com.masterhand.gmorscrm.FirebaseService.MyFirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/DarkAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.news.NewsActivity" />
+        <activity android:name=".activity.news.InviteTripActivity" />
+        <activity android:name=".activity.news.NotifyActivity" />
+        <activity android:name=".activity.news.AnnounceActivity" />
+        <activity android:name=".activity.news.NewsDetailActivity" />
+        <activity android:name=".activity.news.SaleResourceActivity" />
+        <activity android:name=".activity.news.SaleResourceDeptActivity" />
+        <activity android:name=".activity.news.SaleResourceListActivity" />
+        <activity android:name=".activity.news.NotSubmittedActivity" />
+        <activity android:name=".activity.sample.SampleListActivity" />
+        <activity android:name=".activity.sample.SampleSearchActivity" />
+        <activity android:name=".activity.sample.SampleInfoActivity" />
+        <activity
+            android:name=".activity.sample.Sample3DActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".ImageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.customer.CustomerActivity" />
+        <activity android:name=".activity.personal.PersonalActivity" />
+        <activity android:name=".activity.personal.PersonalEditActivity" />
+        <activity android:name=".activity.statistic.StatisticActivity" />
+        <activity android:name=".MenuSettingActivity" />
+        <activity android:name=".activity.setting.SettingActivity" />
+        <activity android:name=".activity.setting.LockSettingActivity" />
+        <activity android:name=".activity.setting.LockConfirmActivity" />
+        <activity android:name=".activity.setting.ThemColorActivity" />
+        <activity android:name=".activity.setting.GuideListActivity" />
+        <activity android:name=".activity.setting.GuideActivity" />
+        <activity android:name=".activity.setting.PasswordChangeActivity" />
+        <activity
+            android:name=".SearchResultActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.task.CreateActivity" />
+        <activity android:name=".activity.customer.CustomerDetailActivity" />
+        <activity android:name=".activity.customer.CustomerInfoActivity" />
+        <activity
+            android:name=".activity.customer.CustomerCreateActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.customer.CustomerSearchActivity" />
+        <activity android:name=".UserListActivity" />
+        <activity android:name=".activity.project.ProjectHistoryActivity" />
+        <activity android:name=".activity.project.ProjectActivity" />
+        <activity android:name=".activity.sale.SaleActivity" />
+        <activity android:name=".activity.sale.SaleSearchActivity" />
+        <activity
+            android:name=".activity.sale.SaleEditActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.task.ConversationActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.report.ReportActivity" />
+        <activity android:name=".activity.report.WeekReportActivity" />
+        <activity
+            android:name=".activity.report.MonthReportActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.task.CancelTaskActivity" />
+        <activity android:name=".activity.task.DelayTaskActivity" />
+        <activity
+            android:name=".activity.task.VisitCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.OfficeCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.TaskCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.AbsentCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.TestCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.QuotationCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.ContractCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.SampleCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.SampleProductCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.QuotationProductCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activity.task.QuotationDetailActivity" />
+        <activity
+            android:name=".activity.task.VisitDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".activity.task.OfficeDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.task.TaskDetailActivity" />
+        <activity android:name=".activity.task.AbsentDetailActivity" />
+        <activity android:name=".activity.task.ContractDetailActivity" />
+        <activity android:name=".activity.task.SampleDetailActivity" />
+        <activity android:name=".activity.task.ReimbursementDetailActivity" />
+        <activity android:name=".activity.task.ReimbursementItemDetailActivity" />
+        <activity android:name=".activity.statistic.StatisticTargetActivity" />
+        <activity android:name=".activity.statistic.StatisticVisitActivity" />
+        <activity android:name=".activity.statistic.StatisticPerformanceActivity" />
+        <activity android:name=".activity.statistic.StatisticSignActivity" />
+        <activity android:name=".activity.statistic.StatisticWinActivity" />
+        <activity android:name=".activity.statistic.StatisticSaleActivity" />
+        <activity android:name=".activity.reimbursement.ReimbursementRecordActivity" />
+        <activity
+            android:name=".activity.task.ReimbursementCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.task.ReimbursementItemCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".CustomerSelectActivity" />
+        <activity android:name=".ProjectSelectActivity" />
+        <activity android:name=".ContactPersonSelectActivity" />
+        <activity android:name=".ParticipantSelectActivity" />
+        <activity android:name=".PhoneTypeSelectActivity" />
+        <activity
+            android:name=".activity.customer.ContactPersonCreateActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.project.ProjectCreateActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ReimbursementTargetSelectActivity" />
+        <activity android:name=".ContacterListActivity" />
+        <activity android:name=".ParticipantListActivity" />
+        <activity android:name=".PeriodSelectActivity" />
+        <activity android:name=".UserSelectActivity" />
+        <activity android:name=".LocationSelectActivity" />
+        <activity android:name=".ApprovalListActivity" />
+        <activity android:name=".activity.approval.ApprovalMenuActivity" />
+        <activity android:name=".activity.approval.ApprovalTabActivity" />
+        <activity android:name=".activity.approval.ApprovalAbsentActivity" />
+        <activity android:name=".activity.approval.ApprovalContractActivity" />
+        <activity android:name=".activity.approval.ApprovalQuotationActivity" />
+        <activity android:name=".activity.approval.ApprovalSampleActivity" />
+        <activity android:name=".activity.approval.ApprovalSpecialPriceActivity" />
+        <activity android:name=".activity.approval.ApprovalProductionActivity" />
+        <activity android:name=".activity.approval.ApprovalNonStandardInquiryActivity" />
+        <activity android:name=".activity.approval.ApprovalSpringRingInquiryActivity" />
+        <activity android:name=".activity.approval.ApprovalExpressActivity" />
+        <activity android:name=".activity.approval.ApprovalTravelActivity" />
+        <activity android:name=".activity.approval.ApprovalSpecialShipActivity" />
+        <activity android:name=".activity.approval.ApprovalSearchActivity" />
+        <activity
+            android:name=".activity.approval.ApprovalMultipleActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activity.approval.ApprovalReimbursementActivity" />
+
+        <activity
+            android:name=".activity.task.SpecialPriceProductCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.task.SpecialPriceCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activity.task.SpecialPriceDetailActivity" />
+        <activity
+            android:name=".activity.task.ProductionCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activity.task.ProductionDetailActivity" />
+        <activity
+            android:name=".activity.task.TravelCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activity.task.TravelDetailActivity" />
+        <activity
+            android:name=".activity.task.ExpressCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activity.task.ExpressDetailActivity" />
+        <activity android:name=".activity.task.RepaymentDetailActivity" />
+        <activity
+            android:name=".activity.task.SpecialShipCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activity.task.SpecialShipDetailActivity" />
+        <activity
+            android:name=".activity.task.NonStandardInquiryCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activity.task.NonStandardInquiryDetailActivity" />
+        <activity
+            android:name=".activity.task.NonStandardInquiryProductCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.task.SpringRingInquiryCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activity.task.SpringRingInquiryDetailActivity" />
+        <activity
+            android:name=".activity.task.SpringRingInquiryProductCreateActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <receiver
+            android:name=".receivers.ReserveAlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="tw.com.masterhand.gmorscrm.receivers.ReserveAlarmReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receivers.ReportCheckAlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="tw.com.masterhand.gmorscrm.receivers.ReportCheckAlarmReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.MessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

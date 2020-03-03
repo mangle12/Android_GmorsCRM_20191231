@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_work_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <tw.com.masterhand.gmorscrm.view.Appbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/appbar_size">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="90dp">
+
+            <tw.com.masterhand.gmorscrm.view.CompanyCard
+                android:id="@+id/companyCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_gray_v"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:showDividers="middle|end">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@mipmap/common_dispatch"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/empty_show"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_repayment_date"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_ship_again"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvShipAgain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_code"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_amount"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_not_bill_amount"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvNotBillAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_not_expire_amount"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvNotExpireAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_expire_day"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvExpireDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_expire_amount"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvExpireAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_biggest_expire_day"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvBiggestExpireDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_prepayment"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvPrepayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_credit"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvCredit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_credit_risk"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvCreditRisk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_less_than_500"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvLessThan500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_total"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/special_ship_exceed_quota"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvExceedQuota"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnApprover"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_size"
+                    android:background="@color/transparent"
+                    android:drawableEnd="@mipmap/common_arrow_right"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="8dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/approver"/>
+
+                <Button
+                    android:id="@+id/btnResource"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_size"
+                    android:background="@color/transparent"
+                    android:drawableEnd="@mipmap/common_arrow_right"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="8dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/online_resource"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/assistant"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvAssistant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/approval_description"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvApprovalDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/relative_photo"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/container_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/divider_transparent_h_8dp"
+                            android:orientation="horizontal"
+                            android:showDividers="middle|end"/>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/list_size"
+                        android:gravity="center_vertical"
+                        android:text="@string/empty_show"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <tw.com.masterhand.gmorscrm.view.ItemApproval
+        android:id="@+id/itemApproval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

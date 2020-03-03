@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gray_light_corner">
+
+    <LinearLayout
+        android:id="@+id/containerTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/leftBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/empty_show"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerTopBar"
+        android:divider="@drawable/divider_transparent_v_8dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="00:00-00:00"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_show"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/target"
+            android:textColor="@color/gray_dark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/join_confirm"/>
+
+        <tw.com.masterhand.gmorscrm.view.ItemTripAccept
+            android:id="@+id/itemTripAccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_delay_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tw.com.masterhand.gmorscrm.activity.task.DelayTaskActivity">
+
+    <tw.com.masterhand.gmorscrm.view.AppbarEdit
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_gray_v"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next_start_time"/>
+
+                <TextView
+                    android:id="@+id/textView_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2016年12月31日  14:00"
+                    android:textColor="@color/orange"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next_end_time"/>
+
+                <TextView
+                    android:id="@+id/textView_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2016年12月31日  14:00"
+                    android:textColor="@color/orange"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delay_reason"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="16dp"
+                        android:text="@string/msg_delay_reason"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_transparent_v_8dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="8dp"
+                    android:showDividers="middle"/>
+
+                <LinearLayout
+                    android:id="@+id/container_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/explain_reason"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/editText_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_transparent_stroke_gray_light"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
