@@ -89,6 +89,7 @@ import tw.com.masterhand.gmorscrm.view.ItemMainSmall;
 public class MainActivity extends BaseUserCheckActivity implements ExpandableCalendar.OnExpandedListener, ExpandableCalendar.OnDateSelectedListener, SwipeRefreshLayout.OnRefreshListener,
         View.OnClickListener, ItemMainMenu.Callback, ItemMainInvite.AcceptListener {
 
+    //測試GIT
     // 主選單
     boolean isMenuShow = false;
     MenuAdapter menuAdapter;
